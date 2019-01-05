@@ -4,6 +4,7 @@ report 50000 "TTTHGS JobWorkOrder"
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     WordLayout = './src/Job/JobWorkOrder.docx';
+    RDLCLayout = './src/Job/JobWorkOrder.rdl';
     DefaultLayout = Word;
 
     dataset
@@ -13,6 +14,9 @@ report 50000 "TTTHGS JobWorkOrder"
             DataItemTableView = where (Number = CONST (1));
 
             column(ReportCaption; textReportCaptionLbl)
+            {
+            }
+            column(ReportPageCapt; textReportPageCaptLbl)
             {
             }
             column(ReportToday; Format(Today(), 0, 4))
@@ -108,18 +112,16 @@ report 50000 "TTTHGS JobWorkOrder"
                 column(JobTask_No; "Job Task No.")
                 {
                 }
-                column(JobTask_Description; Description)
+                column(JobTask_Description; txtJobTaskDescription)
                 {
                 }
                 column(JobTask_Type; "Job Task Type")
                 {
-
                 }
-                column(JobTask_StartDate; JobTask."Start Date")
+                column(JobTask_StartDate; txtStartDate)
                 {
-
                 }
-                column(JobTask_EndDate; JobTask."End Date")
+                column(JobTask_EndDate; txtEndDate)
                 {
                 }
 
@@ -131,6 +133,16 @@ report 50000 "TTTHGS JobWorkOrder"
                 trigger OnAfterGetRecord()
                 var
                 begin
+                    if not booJobTasksHaveHeadings then
+                        booJobTasksHaveHeadings := "Job Task Type" <> "Job Task Type"::Posting;
+                    txtJobTaskDescription := Description;
+                    if booJobTasksHaveHeadings then
+                        if "Job Task Type" = "Job Task Type"::Posting then
+                            txtJobTaskDescription := '- ' + txtJobTaskDescription;
+                    txtStartDate := Format("Start Date");
+                    txtEndDate := Format("End Date", 0, 4);
+                    if "Start Date" <> 0D then
+                        MessagE(txtStartDate);
                 end;
 
                 trigger OnPostDataItem()
@@ -206,9 +218,13 @@ report 50000 "TTTHGS JobWorkOrder"
     end;
 
     var
-        textReportCaptionLbl: Label 'Arbejdsseddel';
+        textReportCaptionLbl: Label 'Work Order';
         textReportPageCaptLbl: Label 'Page';
         arrJobDeliveryAddr: array[8] of Text;
         arrJobBillToAddr: array[8] of Text;
         txtJobAddr: Text;
+        txtJobTaskDescription: Text;
+        txtStartDate: Text;
+        txtEndDate: Text;
+        booJobTasksHaveHeadings: Boolean;
 }

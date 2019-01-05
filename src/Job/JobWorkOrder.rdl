@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>10cm</Height>
+        <Style />
+      </Body>
+      <Width>15cm</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Centimeter</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ReportCaption">
+          <DataField>ReportCaption</DataField>
+        </Field>
+        <Field Name="ReportPageCapt">
+          <DataField>ReportPageCapt</DataField>
+        </Field>
+        <Field Name="ReportToday">
+          <DataField>ReportToday</DataField>
+        </Field>
+        <Field Name="ReportCompanyName">
+          <DataField>ReportCompanyName</DataField>
+        </Field>
+        <Field Name="JobTask_No_Capt">
+          <DataField>JobTask_No_Capt</DataField>
+        </Field>
+        <Field Name="JobTask_Descr_Capt">
+          <DataField>JobTask_Descr_Capt</DataField>
+        </Field>
+        <Field Name="JobTask_Type_Capt">
+          <DataField>JobTask_Type_Capt</DataField>
+        </Field>
+        <Field Name="JobTask_StartDate_Capt">
+          <DataField>JobTask_StartDate_Capt</DataField>
+        </Field>
+        <Field Name="JobTask_EndDate_Capt">
+          <DataField>JobTask_EndDate_Capt</DataField>
+        </Field>
+        <Field Name="Job_No_">
+          <DataField>Job_No_</DataField>
+        </Field>
+        <Field Name="Job_Description">
+          <DataField>Job_Description</DataField>
+        </Field>
+        <Field Name="Job_Description_2">
+          <DataField>Job_Description_2</DataField>
+        </Field>
+        <Field Name="Job_BillToAddr">
+          <DataField>Job_BillToAddr</DataField>
+        </Field>
+        <Field Name="Job_DeliveryAddr">
+          <DataField>Job_DeliveryAddr</DataField>
+        </Field>
+        <Field Name="JobTask_No">
+          <DataField>JobTask_No</DataField>
+        </Field>
+        <Field Name="JobTask_Description">
+          <DataField>JobTask_Description</DataField>
+        </Field>
+        <Field Name="JobTask_Type">
+          <DataField>JobTask_Type</DataField>
+        </Field>
+        <Field Name="JobTask_StartDate">
+          <DataField>JobTask_StartDate</DataField>
+        </Field>
+        <Field Name="JobTask_EndDate">
+          <DataField>JobTask_EndDate</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -19,6 +19,18 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2293608364 - NamedType 1503118145" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order</source>
+          <target>Arbejdsseddel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - NamedType textReportCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2293608364 - NamedType 3050235320" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - NamedType textReportPageCaptLbl</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 2950208852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TTTHGS DeliveryCustomer</source>
           <note from="Developer" annotates="general" priority="2"></note>

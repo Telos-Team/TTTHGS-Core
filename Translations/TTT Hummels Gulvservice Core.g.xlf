@@ -19,7 +19,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2293608364 - NamedType 1503118145" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Arbejdsseddel</source>
+          <source>Work Order</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - NamedType textReportCaptionLbl</note>
         </trans-unit>
