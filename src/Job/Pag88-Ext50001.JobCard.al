@@ -4,8 +4,23 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
     {
         addafter(General)
         {
+            group("TTTHGS WorkDescription Group")
+            {
+                Caption = 'HGS Arbejdsbeskrivelse';
+                field("TTTHGS WorkDescription"; txtWorkDescription)
+                {
+                    Caption = '';
+                    MultiLine = true;
+                    ApplicationArea = All;
+                    trigger OnValidate()
+                    begin
+                        TTTHGS_SetWorkDescription(txtWorkDescription);
+                    end;
+                }
+            }
             group("TTTHGS Delivery")
             {
+                Caption = 'HGS Levering';
                 field("TTTHGS DeliveryCustomer"; "TTTHGS DeliveryCustomer")
                 {
                     ApplicationArea = All;
@@ -26,15 +41,52 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
                 {
                     ApplicationArea = All;
                 }
+                field("TTTHGS DeliveryPhoneNo"; "TTTHGS DeliveryPhoneNo")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }
 
     actions
     {
-        // Add changes to page actions here
+        addfirst(Reporting)
+        {
+            action("TTTHGS JobWorkOrder")
+            {
+                Caption = 'Work Order';
+                ApplicationArea = All;
+                Image = Action;
+                trigger OnAction()
+                var
+                begin
+                    rec.TTTHGS_PrintJobWorkOrder();
+                end;
+            }
+        }
+        addLast(Reporting)
+        {
+            action("TTTHGS TTTPR WorkOrder")
+            {
+                Caption = 'TTTPR1';
+                ApplicationArea = All;
+                Image = Action;
+                trigger OnAction()
+                var
+                    locrepWorkOrder: Report "TTTHGS JobWorkOrder";
+                begin
+                    locrepWorkOrder.Run();
+                end;
+            }
+        }
     }
 
+    trigger OnAfterGetRecord()
+    begin
+        txtWorkDescription := TTTHGS_GetWorkDescription();
+    end;
+
     var
-        myInt: Integer;
+        txtWorkDescription: Text;
 }

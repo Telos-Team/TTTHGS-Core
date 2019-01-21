@@ -5,7 +5,7 @@
             "type": "al",
             "request": "launch",
             "name": "Microsoft cloud sandbox",
-            "startupObjectId": 22,
+            "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": true
         },
@@ -14,9 +14,10 @@
             "request": "launch",
             "name": "Your own server",
             "server": "http://localhost",
-            "serverInstance": "BC130",
+            "serverInstance": "Cronus_Dev_BC",
+            "port": 13004,
             "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "startupObjectId": 89,
             "startupObjectType": "Page",
             "breakOnError": true
         }

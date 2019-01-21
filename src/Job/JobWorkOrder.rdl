@@ -13,10 +13,10 @@
   <ReportSections>
     <ReportSection>
       <Body>
-        <Height>10cm</Height>
+        <Height>2in</Height>
         <Style />
       </Body>
-      <Width>15cm</Width>
+      <Width>6.5in</Width>
       <Page>
         <Style />
       </Page>
@@ -59,7 +59,7 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Centimeter</rd:ReportUnitType>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">

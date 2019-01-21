@@ -6,38 +6,65 @@ tableextension 50000 "TTTHGS Job" extends Job
         {
             DataClassification = CustomerContent;
             TableRelation = Customer;
+            trigger OnValidate()
+            var
+                locrecCust: Record Customer;
+            begin
+                if not locrecCust.Get("TTTHGS DeliveryCustomer") then
+                    exit;
+                "TTTHGS DeliveryName" := locrecCust.Name;
+                "TTTHGS DeliveryName2" := locrecCust."Name 2";
+                "TTTHGS DeliveryAddress" := locrecCust.Address;
+                "TTTHGS DeliveryAddress2" := locrecCust."Address 2";
+                "TTTHGS DeliveryPostCode" := locrecCust."Post Code";
+                "TTTHGS DeliveryCity" := locrecCust.City;
+                "TTTHGS DeliveryPhoneNo" := locrecCust."Phone No.";
+            end;
         }
         field(50001; "TTTHGS DeliveryContact"; Code[20])
         {
+            Caption = 'Levering Kontakt';
             DataClassification = CustomerContent;
             TableRelation = Contact;
         }
         field(50002; "TTTHGS DeliveryName"; Text[50])
         {
+            Caption = 'Levering Navn';
             DataClassification = CustomerContent;
         }
         field(50003; "TTTHGS DeliveryName2"; Text[50])
         {
+            Caption = 'Levering Navn 2';
             DataClassification = CustomerContent;
         }
         field(50004; "TTTHGS DeliveryAddress"; Text[50])
         {
+            Caption = 'Levering Adresse';
             DataClassification = CustomerContent;
         }
         field(50005; "TTTHGS DeliveryAddress2"; Text[50])
         {
+            Caption = 'Levering Addresse 2';
             DataClassification = CustomerContent;
         }
         field(50006; "TTTHGS DeliveryPostCode"; Code[20])
         {
+            Caption = 'Levering Postnr.';
             DataClassification = CustomerContent;
         }
         field(50007; "TTTHGS DeliveryCity"; Text[30])
         {
+            Caption = 'Levering By';
             DataClassification = CustomerContent;
         }
         field(50008; "TTTHGS DeliveryPhoneNo"; Text[30])
         {
+            Caption = 'Levering Telefonnr.';
+            DataClassification = CustomerContent;
+        }
+        field(50009; "TTTHGS WorkDescription"; Blob)
+        {
+            Caption = 'Arbejdsbeskrivelse';
             DataClassification = CustomerContent;
         }
     }
@@ -99,6 +126,16 @@ tableextension 50000 "TTTHGS Job" extends Job
         locrecCust."Post Code" := "TTTHGS DeliveryPostCode";
         locrecCust.City := "TTTHGS DeliveryCity";
         locrecCust."Primary Contact No." := "TTTHGS DeliveryContact";
+        if (locreccust."no." = '') and
+            (locrecCust.Name = '') and
+            (locrecCust."Name 2" = '') and
+            (locrecCust.Address = '') and
+            (locrecCust."Address 2" = '') and
+            (locrecCust."Post Code" = '') and
+            (locrecCust.City = '') and
+            (locrecCust."Primary Contact No." = '')
+        then
+            exit(TTTHGS_FormatBillToAddr(parvararraddr));
         loccuFormatAddr.Customer(parvararrAddr, locrecCust);
         exit(CompressArray(parvararrAddr));
     end;
@@ -110,5 +147,48 @@ tableextension 50000 "TTTHGS Job" extends Job
         Clear(parvarlstAddr);
         TTTHGS_FormatBillToAddr(locarrAddr);
         exit(TTTHGS_AddressArray2List(locarrAddr, parvarlstAddr));
+    end;
+
+    procedure TTTHGS_PrintJobWorkOrder()
+    var
+        locrecJob: Record Job;
+        locrepJobWorkOrder: Report "TTTHGS JobWorkOrder";
+    begin
+        locrecJob := rec;
+        locrecJob.SetRecFilter();
+        locrepJobWorkOrder.SetTableView(locrecJob);
+        locrepJobWorkOrder.Run();
+    end;
+
+    procedure "TTTHGS_SetWorkDescription"(partxtNewWorkDescription: Text)
+    var
+        loctmprecBlob: Record TempBlob;
+    begin
+        CLEAR("TTTHGS WorkDescription");
+        IF partxtNewWorkDescription = '' THEN
+            EXIT;
+        loctmprecBlob.Blob := "TTTHGS WorkDescription";
+        loctmprecBlob.WriteAsText(partxtNewWorkDescription, TEXTENCODING::Windows);
+        "TTTHGS WorkDescription" := loctmprecBlob.Blob;
+        MODIFY();
+    end;
+
+    procedure TTTHGS_GetWorkDescription(): Text
+    begin
+        CALCFIELDS("TTTHGS WorkDescription");
+        EXIT(TTTHGS_GetWorkDescriptionWorkDescriptionCalculated());
+    end;
+
+    procedure TTTHGS_GetWorkDescriptionWorkDescriptionCalculated(): Text
+    var
+        loctmprecBlob: Record TempBlob;
+        CR: Text[1];
+    begin
+        IF NOT "TTTHGS WorkDescription".HASVALUE() THEN
+            EXIT('');
+
+        CR[1] := 10;
+        loctmprecBlob.Blob := "TTTHGS WorkDescription";
+        EXIT(loctmprecBlob.ReadAsText(CR, TEXTENCODING::Windows));
     end;
 }
