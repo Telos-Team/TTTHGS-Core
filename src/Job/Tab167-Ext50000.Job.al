@@ -67,6 +67,16 @@ tableextension 50000 "TTTHGS Job" extends Job
             Caption = 'Arbejdsbeskrivelse';
             DataClassification = CustomerContent;
         }
+        field(50010; "TTTHGS YourReference"; Text[35])
+        {
+            Caption = 'Deres reference';
+            DataClassification = CustomerContent;
+        }
+        field(50011; "TTTHGS ExternalDocumentNo"; Code[35])
+        {
+            Caption = 'Externt bilagsnr.';
+            DataClassification = CustomerContent;
+        }
     }
 
     procedure TTTHGS_AddressArray2List(pararrAddr: array[8] of Text[90]; var parvarlstAddr: List of [Text]): Integer

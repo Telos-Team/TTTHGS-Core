@@ -98,6 +98,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS WorkDescription - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 837243670 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Deres reference</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS YourReference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 1169794117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Externt bilagsnr.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS ExternalDocumentNo - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>

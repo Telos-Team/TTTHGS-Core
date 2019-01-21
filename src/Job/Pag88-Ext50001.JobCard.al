@@ -2,6 +2,17 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
 {
     layout
     {
+        addafter("Project Manager")
+        {
+            field("TTTHGS YourReference"; "TTTHGS YourReference")
+            {
+                ApplicationArea = All;
+            }
+            field("TTTHGS ExternalDocumentNo"; "TTTHGS ExternalDocumentNo")
+            {
+                ApplicationArea = All;
+            }
+        }
         addafter(General)
         {
             group("TTTHGS WorkDescription Group")
