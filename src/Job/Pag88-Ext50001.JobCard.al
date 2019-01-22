@@ -17,7 +17,7 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
         {
             group("TTTHGS WorkDescription Group")
             {
-                Caption = 'HGS Arbejdsbeskrivelse';
+                Caption = 'Work Description';
                 field("TTTHGS WorkDescription"; txtWorkDescription)
                 {
                     Caption = '';
@@ -31,7 +31,7 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
             }
             group("TTTHGS Delivery")
             {
-                Caption = 'HGS Levering';
+                Caption = 'Delivery';
                 field("TTTHGS DeliveryCustomer"; "TTTHGS DeliveryCustomer")
                 {
                     ApplicationArea = All;
@@ -73,21 +73,6 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
                 var
                 begin
                     rec.TTTHGS_PrintJobWorkOrder();
-                end;
-            }
-        }
-        addLast(Reporting)
-        {
-            action("TTTHGS TTTPR WorkOrder")
-            {
-                Caption = 'TTTPR1';
-                ApplicationArea = All;
-                Image = Action;
-                trigger OnAction()
-                var
-                    locrepWorkOrder: Report "TTTHGS JobWorkOrder";
-                begin
-                    locrepWorkOrder.Run();
                 end;
             }
         }

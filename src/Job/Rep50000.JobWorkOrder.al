@@ -84,6 +84,7 @@ report 50000 "TTTHGS JobWorkOrder"
                 {
                     DataItemLinkReference = "JobTask";
                     DataItemLink = "Job No." = field ("Job No."), "Job Task No." = field ("Job Task No.");
+                    DataItemTableView = where ("Line Type" = filter (Budget));
 
                     column(JobPlanningLine_JobTaskNo; "Job Task No.") { }
                     column(JobPlanningLine_LineNo; "Line No.") { }

@@ -2,14 +2,25 @@
 <PermissionSets>
     <PermissionSet RoleID="TTTHGS-Setup" RoleName="TTTHGS Setup">
         <Permission>
-            <!-- asdf -->
+            <!-- Extra Setup -->
+            <ObjectType>Table</ObjectType>
+            <ObjectID>50000</ObjectID>
+            <ReadPermission>0</ReadPermission>
+            <InsertPermission>0</InsertPermission>
+            <ModifyPermission>0</ModifyPermission>
+            <DeletePermission>0</DeletePermission>
+            <ExecutePermission>1</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <!-- Extra Setup -->
             <ObjectType>TableData</ObjectType>
             <ObjectID>50000</ObjectID>
             <ReadPermission>1</ReadPermission>
             <InsertPermission>1</InsertPermission>
             <ModifyPermission>1</ModifyPermission>
             <DeletePermission>1</DeletePermission>
-            <ExecutePermission>1</ExecutePermission>
+            <ExecutePermission>0</ExecutePermission>
             <SecurityFilter />
         </Permission>
     </PermissionSet>

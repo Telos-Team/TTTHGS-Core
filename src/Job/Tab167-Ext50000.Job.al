@@ -4,8 +4,10 @@ tableextension 50000 "TTTHGS Job" extends Job
     {
         field(50000; "TTTHGS DeliveryCustomer"; Code[20])
         {
+            Caption = 'Delivery Customer No.';
             DataClassification = CustomerContent;
             TableRelation = Customer;
+
             trigger OnValidate()
             var
                 locrecCust: Record Customer;
@@ -23,58 +25,58 @@ tableextension 50000 "TTTHGS Job" extends Job
         }
         field(50001; "TTTHGS DeliveryContact"; Code[20])
         {
-            Caption = 'Levering Kontakt';
+            Caption = 'Delivery Contact No.';
             DataClassification = CustomerContent;
             TableRelation = Contact;
         }
         field(50002; "TTTHGS DeliveryName"; Text[50])
         {
-            Caption = 'Levering Navn';
+            Caption = 'Delivery Name';
             DataClassification = CustomerContent;
         }
         field(50003; "TTTHGS DeliveryName2"; Text[50])
         {
-            Caption = 'Levering Navn 2';
+            Caption = 'Delivery Name 2';
             DataClassification = CustomerContent;
         }
         field(50004; "TTTHGS DeliveryAddress"; Text[50])
         {
-            Caption = 'Levering Adresse';
+            Caption = 'Delivery Address';
             DataClassification = CustomerContent;
         }
         field(50005; "TTTHGS DeliveryAddress2"; Text[50])
         {
-            Caption = 'Levering Addresse 2';
+            Caption = 'Delivery Address 2';
             DataClassification = CustomerContent;
         }
         field(50006; "TTTHGS DeliveryPostCode"; Code[20])
         {
-            Caption = 'Levering Postnr.';
+            Caption = 'Delivery Post Code';
             DataClassification = CustomerContent;
         }
         field(50007; "TTTHGS DeliveryCity"; Text[30])
         {
-            Caption = 'Levering By';
+            Caption = 'Delivery City';
             DataClassification = CustomerContent;
         }
         field(50008; "TTTHGS DeliveryPhoneNo"; Text[30])
         {
-            Caption = 'Levering Telefonnr.';
+            Caption = 'Delivery Phone No.';
             DataClassification = CustomerContent;
         }
         field(50009; "TTTHGS WorkDescription"; Blob)
         {
-            Caption = 'Arbejdsbeskrivelse';
+            Caption = 'Work Description';
             DataClassification = CustomerContent;
         }
         field(50010; "TTTHGS YourReference"; Text[35])
         {
-            Caption = 'Deres reference';
+            Caption = 'Your Reference';
             DataClassification = CustomerContent;
         }
         field(50011; "TTTHGS ExternalDocumentNo"; Code[35])
         {
-            Caption = 'Externt bilagsnr.';
+            Caption = 'External Document No.';
             DataClassification = CustomerContent;
         }
     }

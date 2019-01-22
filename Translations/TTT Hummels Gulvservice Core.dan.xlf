@@ -1,80 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="da-DK" original="TTT Hummels Gulvservice Core">
+  <file datatype="xml" source-language="en-US" target-language="da-DK" original="TTT Hummels Gulvservice Core" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.1900.0" tool-company="Microsoft" />
+    </header>
     <body>
-      <group id="body">
+      <group id="body" datatype="resx">
         <trans-unit id="Table 2013768503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Extra Setup</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <target state="translated">Extraopsætning</target>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS ExtraSetup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2013768503 - Field 850685807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <target state="translated">Kode</target>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS ExtraSetup - Field TTTHGS Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2293608364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job - Work Order</source>
-          <target>Sag - Arbejdsseddel</target>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <target state="translated">Sag - Arbejdsseddel</target>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2293608364 - NamedType 1503118145" size-unit="char" translate="yes" xml:space="preserve">
           <source>Work Order</source>
-          <target>Arbejdsseddel</target>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <target state="translated">Arbejdsseddel</target>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - NamedType textReportCaptionLbl</note>
         </trans-unit>
-        <trans-unit id="Report 2293608364 - NamedType 3050235320" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Page</source>
-          <target>Side</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS JobWorkOrder - NamedType textReportPageCaptLbl</note>
+        <trans-unit id="PageExtension 3755232461 - Control 821135556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Description</source>
+          <target state="translated">Arbejdsbeskrivelse</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCard - Control TTTHGS WorkDescription Group - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3755232461 - Control 90525241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <target state="new"></target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCard - Control TTTHGS WorkDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3755232461 - Control 4276415856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery</source>
+          <target state="translated">Levering</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCard - Control TTTHGS Delivery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3755232461 - Action 2293608364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Order</source>
+          <target state="translated">Arbejdsseddel</target>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCard - Action TTTHGS JobWorkOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 2950208852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryCustomer</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Customer No.</source>
+          <target state="translated">Levering Kundenr.</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryCustomer - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 144689896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryContact</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Contact No.</source>
+          <target state="translated">Levering Kontaktnr.</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryContact - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 1484013205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryName</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Name</source>
+          <target state="translated">Levering Navn</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryName - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 2194659651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryName2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Name 2</source>
+          <target state="translated">Levering Navn 2</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryName2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 1984929382 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryAddress</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Address</source>
+          <target state="translated">Levering Adresse</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryAddress - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 1388737244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryAddress2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Address 2</source>
+          <target state="translated">Levering Adresse 2</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryAddress2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 3976638795 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryPostCode</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Post Code</source>
+          <target state="translated">Levering Postnr.</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryPostCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 1421709061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryCity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery City</source>
+          <target state="translated">Levering By</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryCity - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2522195601 - Field 669823211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TTTHGS DeliveryPhoneNo</source>
-          <note from="Developer" annotates="general" priority="2"></note>
+          <source>Delivery Phone No.</source>
+          <target state="translated">Levering Telefonnr.</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS DeliveryPhoneNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 90525241 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Work Description</source>
+          <target state="translated">Arbejdsbeskrivelse</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS WorkDescription - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 837243670 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Your Reference</source>
+          <target state="translated">Deres reference</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS YourReference - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 1169794117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>External Document No.</source>
+          <target state="translated">Eksternt bilagsnr.</target>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS ExternalDocumentNo - Property Caption</note>
         </trans-unit>
       </group>
     </body>
