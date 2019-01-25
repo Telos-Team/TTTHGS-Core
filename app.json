@@ -1,0 +1,28 @@
+{
+    "id": "ccf87421-457e-44ff-a416-41e5a39ef3d5",
+    "name": "TTT Hummels Gulvservice Core",
+    "publisher": "Telos Team",
+    "brief": "TTT Hummels Gulvservice Core",
+    "description": "Core objects for Hummels Gulvservice",
+    "version": "1.0.0.13",
+    "privacyStatement": "http://telosteam.dk/privacy",
+    "EULA": "http://telosteam.dk/eula",
+    "help": "http://telosteam.dk/support",
+    "url": "http://telosteam.dk",
+    "logo": "./res/TT_Logo square.png",
+    "capabilities": [],
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "13.0.0.0",
+    "application": "13.0.0.0",
+    "idRange": {
+      "from": 50000,
+      "to": 50099
+    },
+    "runtime": "2.2",
+    "showMyCode": true,
+    "features": [
+      "TranslationFile"
+    ],
+    "target": "Extension"
+}

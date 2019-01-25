@@ -3,6 +3,31 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="TTT Hummels Gulvservice Core">
     <body>
       <group id="body">
+        <trans-unit id="Table 2108003362 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer2Excel Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS Trsf2ExcelTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2108003362 - Field 850685807 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS Trsf2ExcelTemplate - Field TTTHGS Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2108003362 - Field 343377817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS Trsf2ExcelTemplate - Field TTTHGS TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2108003362 - Field 885436090 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS Trsf2ExcelTemplate - Field TTTHGS TableFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2108003362 - Field 2963571030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS Trsf2ExcelTemplate - Field TTTHGS RequestPage - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2013768503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Extra Setup</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12,6 +37,21 @@
           <source>Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TTTHGS ExtraSetup - Field TTTHGS Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2050487503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer2Excel Templates</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTHGS Trsf2ExcelTemplates - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2050487503 - Control 2963571030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTHGS Trsf2ExcelTemplates - Control TTTHGS RequestPage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2050487503 - Action 2636862546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer2Excel</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TTTHGS Trsf2ExcelTemplates - Action TTTHGS Action - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2293608364 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Job - Work Order</source>
