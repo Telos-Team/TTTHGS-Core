@@ -106,6 +106,30 @@
           <target state="translated">Eksternt bilagsnr.</target>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS ExternalDocumentNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3403385666 - Action 3457110688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Comments</source>
+          <target>Kundebemærkninger</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesOrder - Action TTTHGS CustomerComments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3403385666 - Action 3457110688 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or add comments for the record.</source>
+          <target>Se eller tilføj bemærkninger for kunden.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesOrder - Action TTTHGS CustomerComments - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4190833266 - Action 3404809119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Job</source>
+          <target>Opret sag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesQuoteJobIntegr - Action TTTHGS MakeJob - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4190833266 - Action 3404809119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Convert the sales quote to a job.</source>
+          <target>Omdan salgstilbuddet til en sag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesQuoteJobIntegr - Action TTTHGS MakeJob - Property ToolTip</note>
+        </trans-unit>
       </group>
     </body>
   </file>

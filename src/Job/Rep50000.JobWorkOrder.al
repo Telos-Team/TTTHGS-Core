@@ -104,6 +104,12 @@ report 50000 "TTTHGS JobWorkOrder"
                     if booJobTasksHaveHeadings then
                         if "Job Task Type" = "Job Task Type"::Posting then
                             txtJobTaskDescription := '- ' + txtJobTaskDescription;
+                    datJobTaskStartDate := "Start Date";
+                    datJobTaskEndDate := "End Date";
+                    if job."Starting Date" <> 0D then
+                        datJobTaskStartDate := job."Starting Date";
+                    if job."Ending Date" <> 0D then
+                        datJobTaskEndDate := job."Ending Date";
                 end;
             }
 
@@ -134,4 +140,6 @@ report 50000 "TTTHGS JobWorkOrder"
         txtStartDate: Text;
         txtEndDate: Text;
         booJobTasksHaveHeadings: Boolean;
+        datJobTaskStartDate: Date;
+        datJobTaskEndDate: Date;
 }
