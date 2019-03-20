@@ -1,6 +1,6 @@
 codeunit 50001 "TTTHGS Trsf2ExcelMgt"
 {
-    Description = 'Transfer2Excel Management2';
+    Description = 'Transfer2Excel Management';
 
     trigger OnRun()
     begin
