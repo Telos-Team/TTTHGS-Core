@@ -130,6 +130,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesQuoteJobIntegr - Action TTTHGS MakeJob - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3403385666 - Action 3404809119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Convert the sales order to a job.</source>
+          <target>Omdan salgsordren til en sag.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesOrder - Action TTTHGS MakeJob - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 941801181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote No.</source>
+          <target>Tilbudsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS QuoteNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2522195601 - Field 1628451465 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No.</source>
+          <target>Ordrenr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS OrderNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2816810988 - NamedType 1197388261" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to convert the document to a job?</source>
+          <target>Vil du omdanne dokumentet til en sag?</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTHGS SalesQuoteToJobYesNo - NamedType lblConfirmConvertToJobTxt</note>
+        </trans-unit>
       </group>
     </body>
   </file>

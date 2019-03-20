@@ -20,6 +20,17 @@ pageextension 50000 "TTTHGS SalesOrder" extends "Sales Order"
                 RunPageLink = "No." = field ("Sell-to Customer No.");
                 RunPageView = where ("Table Name" = const ("Customer"));
             }
+            action("TTTHGS MakeJob")
+            {
+                Caption = 'Create Job';
+                ToolTip = 'Convert the sales order to a job.';
+                Image = MakeOrder;
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Codeunit.Run(Codeunit::"TTTHGS SalesQuoteToJobYesNo", Rec);
+                end;
+            }
         }
     }
 }

@@ -9,6 +9,7 @@
             "startupObjectId": 143,
             "startupObjectType": "Page",
             "breakOnError": true,
+            "schemaUpdateMode": "Synchronize",
         },
         {
             "type": "al",

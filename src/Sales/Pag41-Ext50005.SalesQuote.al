@@ -15,7 +15,6 @@ pageextension 50005 "TTTHGS SalesQuoteJobIntegr" extends "Sales Quote"
                 ToolTip = 'Convert the sales quote to a job.';
                 Image = MakeOrder;
                 ApplicationArea = All;
-                RunObject = Page 21;
                 trigger OnAction()
                 begin
                     Codeunit.Run(Codeunit::"TTTHGS SalesQuoteToJobYesNo", Rec);

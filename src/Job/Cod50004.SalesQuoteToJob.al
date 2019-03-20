@@ -5,11 +5,26 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
 
     trigger OnRun()
     begin
-        TestField("Document Type", "Document Type"::Quote);
+        recSH := Rec;
+        Code();
+        Rec := recSH;
     end;
 
-    // CreateWorkDescription
-    // New fields Quote No, Order No.
+    local procedure Code()
+    begin
+        PerformTests()
+        //CreateJob();
+        //CreateWorkDescription();
+        //FillJob();
+        //CopyComments();
+        //CopyLinks();
+    end;
+
+    local procedure PerformTests()
+    begin
+        if not (recsh."Document Type" in [recsh."Document Type"::Quote, recsh."Document Type"::Order]) then
+            recsh.TestField("Document Type", recsh."Document Type"::Quote);
+    end;
 
     procedure GetJob(var parvarrecJob: Record "Job")
     var
@@ -19,6 +34,7 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
 
     var
         recJob: Record "Job";
+        recSH: Record "Sales Header";
 }
 
 /*
@@ -27,19 +43,6 @@ CALCFIELDS(Work Description");
 CreateSalesHeader(Rec,Cust."Prepayment %");
 
 TransferQuoteToSalesOrderLines(SalesQuoteLine,Rec,SalesOrderLine,SalesOrderHeader,Cust);
-
-SalesSetup.GET;
-CASE SalesSetup."Archive Quotes" OF
-  SalesSetup."Archive Quotes"::Always:
-    ArchiveManagement.ArchSalesDocumentNoConfirm(Rec);
-  SalesSetup."Archive Quotes"::Question:
-    ArchiveManagement.ArchiveSalesDocument(Rec);
-END;
-
-IF SalesSetup."Default Posting Date" = SalesSetup."Default Posting Date"::"No Date" THEN BEGIN
-  SalesOrderHeader."Posting Date" := 0D;
-  SalesOrderHeader.MODIFY;
-END;
 
 SalesCommentLine.CopyComments("Document Type",SalesOrderHeader."Document Type","No.",SalesOrderHeader."No.");
 RecordLinkManagement.CopyLinks(Rec,SalesOrderHeader);

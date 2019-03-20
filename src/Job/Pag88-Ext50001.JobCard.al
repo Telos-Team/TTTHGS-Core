@@ -12,6 +12,16 @@ pageextension 50001 "TTTHGS JobCard" extends "Job Card"
             {
                 ApplicationArea = All;
             }
+            field("TTTHGS QuoteNo"; "TTTHGS QuoteNo")
+            {
+                ApplicationArea = All;
+                Importance = Additional;
+            }
+            field("TTTHGS OrderNo"; "TTTHGS OrderNo")
+            {
+                ApplicationArea = All;
+                Importance = Additional;
+            }
         }
         addafter(General)
         {

@@ -5,7 +5,8 @@ codeunit 50003 "TTTHGS SalesQuoteToJobYesNo"
 
     trigger OnRun()
     begin
-        TestField("Document Type", "Document Type"::Quote);
+        if not ("Document Type" in ["Document Type"::Quote, "Document Type"::Order]) then
+            TestField("Document Type", "Document Type"::Quote);
         if GuiAllowed() then
             if not Confirm(lblConfirmConvertToJobTxt, false) then
                 exit;
@@ -26,5 +27,5 @@ codeunit 50003 "TTTHGS SalesQuoteToJobYesNo"
         recJob: Record "Job";
         cuSalesQuoteToOrder: Codeunit "TTTHGS SalesQuoteToJob";
         pagJobCard: Page "Job Card";
-        lblConfirmConvertToJobTxt: Label 'Do you want to convert the quote to an order?';
+        lblConfirmConvertToJobTxt: Label 'Do you want to convert the document to job?';
 }
