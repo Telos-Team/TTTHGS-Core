@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "Microsoft cloud sandbox, Hummels",
             "tenant": "hummelsdk.onmicrosoft.com",
-            "startupObjectId": 143,
+            "startupObjectId": 45,
             "startupObjectType": "Page",
             "breakOnError": true,
             "schemaUpdateMode": "Synchronize",

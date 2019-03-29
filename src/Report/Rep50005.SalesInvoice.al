@@ -10,6 +10,8 @@ report 50005 "TTTHGS SalesInvoice"
     Permissions = TableData 7190 = rimd;
     PreviewMode = PrintLayout;
     WordMergeDataItem = Header;
+    UsageCategory = Documents;
+    ApplicationArea = All;
 
     dataset
     {
@@ -439,7 +441,7 @@ report 50005 "TTTHGS SalesInvoice"
                 }
                 column(AmountExcludingVAT_Line; Amount)
                 {
-                    AutoFormatExpression = GetCurrencyCode;
+                    AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
                 }
                 column(AmountExcludingVAT_Line_Lbl; FIELDCAPTION(Amount))
@@ -447,12 +449,12 @@ report 50005 "TTTHGS SalesInvoice"
                 }
                 column(AmountIncludingVAT_Line; "Amount Including VAT")
                 {
-                    AutoFormatExpression = GetCurrencyCode;
+                    AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
                 }
                 column(AmountIncludingVAT_Line_Lbl; FIELDCAPTION("Amount Including VAT"))
                 {
-                    AutoFormatExpression = GetCurrencyCode;
+                    AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
                 }
                 column(Description_Line; Description)
@@ -469,7 +471,7 @@ report 50005 "TTTHGS SalesInvoice"
                 }
                 column(LineAmount_Line; FormattedLineAmount)
                 {
-                    AutoFormatExpression = GetCurrencyCode;
+                    AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 1;
                 }
                 column(LineAmount_Line_Lbl; FIELDCAPTION("Line Amount"))
@@ -498,7 +500,7 @@ report 50005 "TTTHGS SalesInvoice"
                 }
                 column(UnitPrice; FormattedUnitPrice)
                 {
-                    AutoFormatExpression = GetCurrencyCode;
+                    AutoFormatExpression = GetCurrencyCode();
                     AutoFormatType = 2;
                 }
                 column(UnitPrice_Lbl; FIELDCAPTION("Unit Price"))
@@ -779,7 +781,7 @@ report 50005 "TTTHGS SalesInvoice"
                 }
                 column(VATBase_VatAmountLine; "VAT Base")
                 {
-                    AutoFormatExpression = Line.GetCurrencyCode;
+                    AutoFormatExpression = Line.GetCurrencyCode();
                     AutoFormatType = 1;
                 }
                 column(VATBase_VatAmountLine_Lbl; FIELDCAPTION("VAT Base"))

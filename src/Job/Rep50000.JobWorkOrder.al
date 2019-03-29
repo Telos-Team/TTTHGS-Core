@@ -76,8 +76,8 @@ report 50000 "TTTHGS JobWorkOrder"
                 column(JobTask_No; "Job Task No.") { }
                 column(JobTask_Description; txtJobTaskDescription) { }
                 column(JobTask_Type; "Job Task Type") { }
-                column(JobTask_StartDate; "Start Date") { }
-                column(JobTask_EndDate; "End Date") { }
+                column(JobTask_StartDate; datJobTaskStartDate) { }
+                column(JobTask_EndDate; datJobTaskEndDate) { }
 
 
                 dataitem(JobPlanningLine; "Job Planning Line")
@@ -137,8 +137,6 @@ report 50000 "TTTHGS JobWorkOrder"
         arrJobBillToAddr: array[8] of Text;
         txtJobAddr: Text;
         txtJobTaskDescription: Text;
-        txtStartDate: Text;
-        txtEndDate: Text;
         booJobTasksHaveHeadings: Boolean;
         datJobTaskStartDate: Date;
         datJobTaskEndDate: Date;

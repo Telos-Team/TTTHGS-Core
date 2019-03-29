@@ -124,6 +124,12 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesQuoteJobIntegr - Action TTTHGS MakeJob - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3403385666 - Action 3404809119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Job</source>
+          <target>Opret sag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS SalesOrder - Action TTTHGS MakeJob - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4190833266 - Action 3404809119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Convert the sales quote to a job.</source>
           <target>Omdan salgstilbuddet til en sag.</target>
@@ -149,7 +155,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension TTTHGS Job - Field TTTHGS OrderNo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 2816810988 - NamedType 1197388261" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Do you want to convert the document to a job?</source>
+          <source>Do you want to convert the document to job?</source>
           <target>Vil du omdanne dokumentet til en sag?</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTHGS SalesQuoteToJobYesNo - NamedType lblConfirmConvertToJobTxt</note>

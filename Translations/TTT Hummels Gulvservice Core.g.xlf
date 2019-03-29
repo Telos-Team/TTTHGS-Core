@@ -48,6 +48,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTHGS SalesQuoteToJobYesNo - NamedType lblConfirmConvertToJobTxt</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2735069762 - NamedType 2137072475" size-unit="char" translate="yes" xml:space="preserve">
+          <source>100</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTHGS SalesQuoteToJob - NamedType lblJobTaskNoTok</note>
+        </trans-unit>
         <trans-unit id="Page 2050487503 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Transfer2Excel Templates</source>
           <note from="Developer" annotates="general" priority="2"></note>
