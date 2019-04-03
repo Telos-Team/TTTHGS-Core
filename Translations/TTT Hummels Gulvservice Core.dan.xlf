@@ -160,6 +160,24 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TTTHGS SalesQuoteToJobYesNo - NamedType lblConfirmConvertToJobTxt</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 4222845916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contribution Margin</source>
+          <target>Dækningsbidrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMarginGrp - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 227410319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budg. Contribution Margin</source>
+          <target>Budg. dækningsbidrag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMargin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 706725062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budg. Contribution Margin Pct.</source>
+          <target>Budg. dækningsgrad</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMarginPct - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>

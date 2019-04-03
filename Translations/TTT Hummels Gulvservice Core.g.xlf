@@ -718,6 +718,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS SalesInvoiceTest1 - NamedType PricePerLbl</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 4222845916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Contribution Margin</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMarginGrp - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 227410319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budg. Contribution Margin</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMargin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1142998179 - Control 706725062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Budg. Contribution Margin Pct.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMarginPct - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3755232461 - Control 821135556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Work Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
