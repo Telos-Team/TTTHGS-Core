@@ -150,6 +150,8 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
         locrecJobPlanLine.Validate(Quantity, parrecSL.Quantity);
         locrecJobPlanLine.Validate("Unit Price", parrecSL."Unit Price");
         locrecJobPlanLine.Validate("Line Discount %", parrecsl."Line Discount %");
+        locrecJobPlanLine.Validate("Description", parrecsl."Description");
+        locrecJobPlanLine.Validate("Description 2", parrecsl."Description 2");
         locrecJobPlanLine.Modify(false);
     end;
 

@@ -36,7 +36,7 @@
             "type": "al",
             "request": "launch",
             "name": "Docker",
-            "server": "http://navserver",
+            "server": "http://bcreleased",
             "serverInstance": "NAV",
             "port": 7049,
             "authentication": "Windows",

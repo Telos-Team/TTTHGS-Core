@@ -34,7 +34,7 @@ pageextension 50007 "TTTHGS JobCostFactbox" extends "Job Cost Factbox"
         loccuJobCalcStat.GetLCYPriceAmounts(locarrdecPL);
         decBudgContrMarg := locarrdecPL[12] - locarrdecCL[4];
         if locarrdecCL[4] <> 0 then
-            decBudgContrMargPct := decBudgContrMarg * 100 / locarrdecCL[4];
+            decBudgContrMargPct := decBudgContrMarg * 100 / locarrdecCL[12];
     end;
 
     var

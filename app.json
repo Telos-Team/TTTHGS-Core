@@ -4,14 +4,21 @@
     "publisher": "Telos Team",
     "brief": "TTT Hummels Gulvservice Core",
     "description": "Core objects for Hummels Gulvservice",
-    "version": "1.0.0.20",
+    "version": "1.0.0.23",
     "privacyStatement": "http://telosteam.dk/privacy",
     "EULA": "http://telosteam.dk/eula",
     "help": "http://telosteam.dk/support",
     "url": "http://telosteam.dk",
     "logo": "./res/TT_Logo square.png",
     "capabilities": [],
-    "dependencies": [],
+    "dependencies": [
+      {
+        "appId": "644f7e5b-a81c-408a-aaa2-766e655a80a3",
+        "name": "Payment and Reconciliation Formats (DK)",
+        "publisher": "Microsoft",
+        "version": "1.0.29483.0"
+      }
+    ],
     "screenshots": [],
     "platform": "13.0.0.0",
     "application": "13.0.0.0",
