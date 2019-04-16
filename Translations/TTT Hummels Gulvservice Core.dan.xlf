@@ -178,6 +178,54 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS JobCostFactbox - Control TTTHGS BudgetContributionMarginPct - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3512652915 - Action 778742856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jobs</source>
+          <target>Sager</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS Bus. Man. Role Center - Action TTTHGS Jobs - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3512652915 - Action 778742856 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Job List</source>
+          <target>Vis Sagsliste</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS Bus. Man. Role Center - Action TTTHGS Jobs - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3512652915 - Action 1609201630 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hummels</source>
+          <target>Hummels</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS Bus. Man. Role Center - Action TTTHGS ProcessingAnchor - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3512652915 - Action 1609201630 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hummels Processing Menu</source>
+          <target>Hummels menu</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension TTTHGS Bus. Man. Role Center - Action TTTHGS ProcessingAnchor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3401791438 - NamedType 2906320672" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Terms</source>
+          <target>Betalingsbetingelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardSalesInvoice - NamedType PaymentTermsDescLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3401791438 - NamedType 3280613231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Kontonr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardSalesInvoice - NamedType CompanyInfoBankAccNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3401791438 - NamedType 984818344" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit</source>
+          <target>Enhed</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardSalesInvoice - NamedType UnitLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 3401791438 - NamedType 1989518965" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoice</source>
+          <target>Faktura</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardSalesInvoice - NamedType SalesInvoiceLbl</note>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[{"Id":50000,"Kind":11,"Name":"TTTHGS SalesManagement","PackagePath":"/src/src/Sales/Cod50000.SalesManagement.al"}],"Removed":[]}
+﻿{"Added":[{"Id":50009,"Kind":16,"Name":"TTTHGS Bus. Man. Role Center","PackagePath":"/src/src/Setup/Pag9022-Ext50009.BusinessManager.al"},{"Id":50010,"Kind":16,"Name":"TTTHGS TimeSheet","PackagePath":"/src/src/TimeSheet/Pag950-Ext50010.TimeSheet.al"}],"Modified":[{"Id":50000,"Kind":11,"Name":"TTTHGS SalesManagement","PackagePath":"/src/src/Sales/Cod50000.SalesManagement.al"}],"Removed":[]}
