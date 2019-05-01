@@ -226,6 +226,718 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardSalesInvoice - NamedType SalesInvoiceLbl</note>
         </trans-unit>
+        <trans-unit id="Report 1000753082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HGS Standard Statement</source>
+          <target>HGS Standard Kontoudtog</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Valg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 474480784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <target>Startdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Start Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 474480784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date from which the report or batch job processes information.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Start Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2649176925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <target>Slutdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control End Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2649176925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date to which the report or batch job processes information.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control End Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 120518645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Overdue Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control ShowOverdueEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 120518645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want overdue entries to be shown separately for each currency.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control ShowOverdueEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3349558288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Include - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2059574099 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include All Customers with Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAllCustomerswithLE - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2059574099 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want entries displayed for customers that have ledger entries at the end of the selected period.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAllCustomerswithLE - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 686806962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include All Customers with a Balance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAllCustomerswithBalance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 686806962 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want entries displayed for customers that have a balance at the end of the selected period.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAllCustomerswithBalance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3414096222 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Reversed Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeReversedEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3414096222 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to include reversed entries in the report.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeReversedEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2809948940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Unapplied Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeUnappliedEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2809948940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to include unapplied entries in the report.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeUnappliedEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3843728681 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aging Band</source>
+          <target>Forfaldne</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Aging Band - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 4178264437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Include Aging Band</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAgingBand - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 4178264437 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want an aging band to be included in the document. If you place a check mark here, you must also fill in the Aging Band Period Length and Aging Band by fields.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control IncludeAgingBand - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 4278445754 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aging Band Period Length</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control AgingBandPeriodLengt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 4278445754 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the length of each of the four periods in the aging band, for example, enter "1M" for one month. The most recent period will end on the last day of the period in the Date Filter field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control AgingBandPeriodLengt - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 1031320896 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aging Band by</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control AgingBandby - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 1031320896 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control AgingBandby - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 1031320896 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the aging band will be calculated from the due date or from the posting date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control AgingBandby - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 816368762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control LogInteraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 816368762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the program to log this interaction.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control LogInteraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 2092947929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Output Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control Output Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3039415211 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report Output</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control ReportOutput - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3039415211 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print,Preview,Word,PDF,Email,XML - RDLC layouts only</source>
+          <note from="Developer" annotates="general" priority="2">Each item is a verb/action - to print, to preview, to export to Word, export to PDF, send email, export to XML for RDLC layouts only</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control ReportOutput - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3039415211 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the output of the scheduled report, such as PDF or Word.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control ReportOutput - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 506008736 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control EmailOptions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3593006799 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print remaining statements</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control PrintMissingAddresses - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - Control 3593006799 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that amounts remaining to be paid will be included.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - Control PrintMissingAddresses - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2658247183" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Multicurrency Application</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType MulticurrencyAppLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 91193263" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Payment Discount</source>
+          <target>Kontantrabat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType PaymentDiscountLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 4178136980" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rounding</source>
+          <target>Afruding</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType RoundingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3369796449" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify the Aging Band Period Length.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType AgingBandPeriodErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 648825967" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify Aging Band Ending Date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType AgingBandEndErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 914934739" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aged Summary by %1 (%2 by %3)</source>
+          <target>Forfaldnet pr. %1 (%2 pr. %3)</target>
+          <note from="Developer" annotates="general" priority="2">%1=Report aging band end date, %2=Aging band period, %3=Type of deadline ('due date', 'posting date') as given in DuePostingDateLbl</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType AgedSummaryLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1939410736" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period Length is out of range.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType PeriodLengthErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 755770214" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date,Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType DuePostingDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1004911421" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Application Writeoffs</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType WriteoffsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 392547388" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entries %1</source>
+          <target>Poster %1</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Currency code</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType EntriesLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2380365702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Overdue Entries %1</source>
+          <target>Forfaldne poster %1</target>
+          <note from="Developer" annotates="general" priority="2">%1=Currency code</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType OverdueEntriesLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1610312953" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement </source>
+          <target>Kontoudtog </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType StatementLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2936027006" size-unit="char" translate="yes" xml:space="preserve">
+          <source>-%1</source>
+          <note from="Developer" annotates="general" priority="2">Negating the period length: %1 is the period length</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType PeriodSeparatorLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 698237251" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement</source>
+          <target>Kontoudtog</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType StatementCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2512069321" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Telefon</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType PhoneNo_CompanyInfoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 276525116" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <target>SE/CVR-nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType VATRegNo_CompanyInfoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3655449964" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType GiroNo_CompanyInfoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3144910853" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType BankName_CompanyInfoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1931799952" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Kontonr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType BankAccNo_CompanyInfoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3162110670" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <target>Kunden.r</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType No1_CustCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2209068532" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Starting Date</source>
+          <target>Startdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType StartDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3982372241" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ending Date</source>
+          <target>Slutdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType EndDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3303928736" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statement No.</source>
+          <target>Kontoudtogsnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType LastStatmntNo_CustCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3401669194" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Bogføringsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType PostDate_DtldCustLedgEntriesCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 58467362" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <target>Forfaldsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType DueDate_CustLedgEntry2CaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3136279037" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Balance</source>
+          <target>Sum</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType CustBalanceCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 106401415" size-unit="char" translate="yes" xml:space="preserve">
+          <source>..before</source>
+          <target>..før</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType beforeCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2869507195" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Hjemmeside</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType CompanyInfoHomepageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2377105323" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target>Email</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType CompanyInfoEmailCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3112881028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <target>Bilagsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType DocDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3102655787" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <target>Total</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType Total_CaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1460927981" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date must have a value.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType BlankStartDateErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 159342192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date must have a value.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType BlankEndDateErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 3956382959" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start date must be earlier than End date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType StartDateLaterTheEndDateErr</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 684809554" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType CurrReportPageNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target>Kære</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <target>Venlig hilsen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1000753082 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Thank you for your business. Your statement is attached to this message.</source>
+          <target>Tak for handlen. Dit kontoudtog er vedhæftet.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS StandardStatement - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HGS Notification Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 193851041" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification Settings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType SettingsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 212979129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Windows Client)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType SettingsWinLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 3874106483" size-unit="char" translate="yes" xml:space="preserve">
+          <source>(Custom Link)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType CustomLinkLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 2230947815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello %1,</source>
+          <note from="Developer" annotates="general" priority="2">%1 = User Name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType Line1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 1289907146" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You are registered to receive notifications related to %1.</source>
+          <note from="Developer" annotates="general" priority="2">%1 = Company Name</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType Line2Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 1805266921" size-unit="char" translate="yes" xml:space="preserve">
+          <source>This is a message to notify you that:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType Line3Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 2127427980" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Notification messages are sent automatically and cannot be replied to. But you can change when and how you receive notifications:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType Line4Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2166099075 - NamedType 2318046708" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS NotificationEmail - NamedType DetailsLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HGS Reminder</source>
+          <target>HGS Rykker</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - ReportDataItem 1929467888 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder</source>
+          <target>Rykker</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - ReportDataItem Issued Reminder Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <target>Valg</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 316520822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Internal Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowInternalInfo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 316520822 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the printed report to show information that is only for internal use.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowInternalInfo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 816368762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control LogInteraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 816368762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the reminder that you print to be recorded as interaction, and to be added to the Interaction Log Entry table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control LogInteraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 2278817471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Not Due Amounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowNotDueAmounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 2278817471 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to show amounts that are not due from customers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowNotDueAmounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 4146528255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show MIR Detail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowMIR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - Control 4146528255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want multiple interest rate details for the journal lines to be included in the report.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - Control ShowMIR - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1327832897" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1</source>
+          <target>Total %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text000Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1 Incl. VAT</source>
+          <target>Total %1 Incl. Moms</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page %1</source>
+          <target>Side %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 17661673" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification in </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text011Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3543369544" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text012Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 443342567" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange rate: %1/%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType Text013Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 626218360" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <target>Side</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType TextPageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 443421780" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <target>Bogføringsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType PostingDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1118993357" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder No.</source>
+          <target>Rykkernr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType ReminderNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 4233096702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <target>Kontonr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType BankAccNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 2728952663" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType BankNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 13422290" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType GiroNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1306668226" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <target>SE/CVR-nr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATRegNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1928308579" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <target>Telefonnr.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType PhoneNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 2320187798" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder</source>
+          <target>Rykker</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType ReminderCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 973567044" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType HeaderDimensionsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 343855514" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <target>Bilagsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType DocumentDateCaption1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3208712818" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Amount</source>
+          <target>Rentebeløb</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType InterestAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 2248914289" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Including VAT</source>
+          <target>Beløb incl. Moms</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType AmountIncVATCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1396908878" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification</source>
+          <target>Momsspecifikation</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATAmtSpecCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1424416391" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Clause</source>
+          <target>Moms type</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATClausesCapLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1071970054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Identifier</source>
+          <target>Moms ID</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATIdentifierLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 4036938315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Continued</source>
+          <target>Fortsat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType ContinuedCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 4137192940" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Continued</source>
+          <target>Fortsat</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType ContinuedCaption1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 4092352280" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <target>Forfaldsdato</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType DueDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3913295325" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount</source>
+          <target>Momsbeløb</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1303359398" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Base</source>
+          <target>Momsgrundlag</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATBaseCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 969467040" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT %</source>
+          <target>Moms %</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType VATPercentCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1583171122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType TotalCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 650077689" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType PageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3112881028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType DocDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 2862688884" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <target>Hjemmeside</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType HomePageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 595034892" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType EMailCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target>Kære</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3197031362" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You are receiving this email to formally notify you that payment owed by you is past due. The payment was due on %1. Enclosed is a copy of invoice with the details of remaining amount.</source>
+          <target>Du modtager denne mail for at give dig formelt besked om, at en betaling, du skylder, har overskredet forfaldsdatoen. Betalingen forfaldt den %1. Vedhæfted er der et bilag med oplysninger om det udestående beløb.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = A due date</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType AmtDueLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you have already made the payment, please disregard this email. Thank you for your business.</source>
+          <target>Hvis du allerede har foretaget betalingen, kan du se bort fra denne mail. Tak for din ordre.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <target>Venlig hilsen</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 2254099346 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <target>Beskrivelse</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType DescriptionLbl</note>
+        </trans-unit>
       </group>
     </body>
   </file>

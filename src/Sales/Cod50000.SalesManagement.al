@@ -25,6 +25,44 @@ codeunit 50000 "TTTHGS SalesManagement"
         exit(StrSubstNo('+71<%1+%2<', loccodPaymentReference, locrecCompSetup.BankCreditorNo));
     end;
 
+    procedure GetFIK71Cust(parrecCust: Record "Customer") ReturnValue: Text
+    var
+        locrecCompSetup: Record "Company Information";
+        locintLength: Integer;
+        loccodPaymentReference: Code[16];
+        loccodModulus: Code[1];
+    begin
+        locrecCompSetup.Get();
+        if locrecCompSetup."BankCreditorNo" = '' then
+            exit;
+        locintLength := 15;
+        loccodPaymentReference := PADSTR('', locintLength - 2 - STRLEN(parrecCust."No."), '0') + parrecCust."No." + '9';
+        loccodModulus := Modulus10(loccodPaymentReference);
+        if loccodModulus = '' then
+            exit;
+        loccodPaymentReference := copystr(loccodPaymentReference + loccodModulus, 1, 16);
+        exit(StrSubstNo('+71<%1+%2<', loccodPaymentReference, locrecCompSetup.BankCreditorNo));
+    end;
+
+    procedure GetFIK71Remind(parrecReminder: Record "Issued Reminder Header") ReturnValue: Text
+    var
+        locrecCompSetup: Record "Company Information";
+        locintLength: Integer;
+        loccodPaymentReference: Code[16];
+        loccodModulus: Code[1];
+    begin
+        locrecCompSetup.Get();
+        if locrecCompSetup."BankCreditorNo" = '' then
+            exit;
+        locintLength := 15;
+        loccodPaymentReference := PADSTR('', locintLength - 2 - STRLEN(parrecReminder."Customer No."), '0') + parrecReminder."Customer No." + '9';
+        loccodModulus := Modulus10(loccodPaymentReference);
+        if loccodModulus = '' then
+            exit;
+        loccodPaymentReference := copystr(loccodPaymentReference + loccodModulus, 1, 16);
+        exit(StrSubstNo('+71<%1+%2<', loccodPaymentReference, locrecCompSetup.BankCreditorNo));
+    end;
+
     procedure Modulus10(parcodNumber: Code[16]): Code[1]
     var
         locintWeight: Integer;

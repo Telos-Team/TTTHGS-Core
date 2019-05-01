@@ -1,6 +1,6 @@
 report 50001 "TTTHGS StandardSalesInvoice"
 {
-    RDLCLayout = './src/Report/Rep50001.StandardSalesInvoice.rdlc';
+    RDLCLayout = './src/Report/Rep50001.StandardSalesInvoice.rdl';
     WordLayout = './src/Report/Rep50001.StandardSalesInvoice.docx';
     Caption = 'HGS Sales - Invoice';
     DefaultLayout = Word;
