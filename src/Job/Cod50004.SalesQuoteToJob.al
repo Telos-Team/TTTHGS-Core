@@ -115,7 +115,7 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
     begin
         locrecSL.SetRange("Document Type", recSH."Document Type");
         locrecSL.SetRange("Document No.", recSH."No.");
-        locrecSL.SetFilter(Type, '%1|%2', locrecSL.Type::"G/L Account", locrecSL.Type::"item");
+        locrecSL.SetFilter(Type, '%1|%2|%3', locrecSL.Type::" ", locrecSL.Type::"G/L Account", locrecSL.Type::"item");
         if not locrecSL.FindSet() then
             exit;
         CreateJobTask();
@@ -128,7 +128,7 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
     var
         locrecJobPlanLine: Record "Job Planning Line";
     begin
-        parrecSL.TestField(Type);
+        //   parrecSL.TestField(Type);
         locrecJobPlanLine.SetRange("Job No.", recJob."No.");
         locrecJobPlanLine.SetRange("Job Task No.", lblJobTaskNoTok);
         if locrecJobPlanLine.FindLast() then;
@@ -140,16 +140,20 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
         locrecJobPlanLine.Insert(true);
 
         case parrecSL.Type of
+            parrecSL.type::" ":
+                locrecJobPlanLine.Validate(Type, locrecJobPlanLine.Type::Text);
             parrecSL.Type::"G/L Account":
                 locrecJobPlanLine.Validate(Type, locrecJobPlanLine.Type::"G/L Account");
             parrecSL.Type::"Item":
                 locrecJobPlanLine.Validate(Type, locrecJobPlanLine.Type::Item);
         end;
-        locrecJobPlanLine.Validate("Line Type", locrecJobPlanLine."Line Type"::Billable);
-        locrecJobPlanLine.Validate("No.", parrecSL."No.");
-        locrecJobPlanLine.Validate(Quantity, parrecSL.Quantity);
-        locrecJobPlanLine.Validate("Unit Price", parrecSL."Unit Price");
-        locrecJobPlanLine.Validate("Line Discount %", parrecsl."Line Discount %");
+        if parrecSL.Type <> parrecSL.type::" " then begin
+            locrecJobPlanLine.Validate("Line Type", locrecJobPlanLine."Line Type"::Billable);
+            locrecJobPlanLine.Validate("No.", parrecSL."No.");
+            locrecJobPlanLine.Validate(Quantity, parrecSL.Quantity);
+            locrecJobPlanLine.Validate("Unit Price", parrecSL."Unit Price");
+            locrecJobPlanLine.Validate("Line Discount %", parrecsl."Line Discount %");
+        end;
         locrecJobPlanLine.Validate("Description", parrecsl."Description");
         locrecJobPlanLine.Validate("Description 2", parrecsl."Description 2");
         locrecJobPlanLine.Modify(false);
