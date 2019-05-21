@@ -115,7 +115,7 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
     begin
         locrecSL.SetRange("Document Type", recSH."Document Type");
         locrecSL.SetRange("Document No.", recSH."No.");
-        locrecSL.SetFilter(Type, '%1|%2|%3', locrecSL.Type::" ", locrecSL.Type::"G/L Account", locrecSL.Type::"item");
+        locrecSL.SetFilter(Type, '%1|%2|%3|%4', locrecSL.Type::" ", locrecSL.Type::"G/L Account", locrecSL.Type::"item", locrecSL.Type::Resource);
         if not locrecSL.FindSet() then
             exit;
         CreateJobTask();
@@ -146,6 +146,8 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
                 locrecJobPlanLine.Validate(Type, locrecJobPlanLine.Type::"G/L Account");
             parrecSL.Type::"Item":
                 locrecJobPlanLine.Validate(Type, locrecJobPlanLine.Type::Item);
+            parrecSL.Type::Resource:
+                locrecJobPlanLine.validate(type, locrecJobPlanLine.type::Resource);
         end;
         if parrecSL.Type <> parrecSL.type::" " then begin
             locrecJobPlanLine.Validate("Line Type", locrecJobPlanLine."Line Type"::Billable);
