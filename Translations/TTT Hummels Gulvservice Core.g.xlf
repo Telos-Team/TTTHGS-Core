@@ -1048,6 +1048,251 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder - NamedType DescriptionLbl</note>
         </trans-unit>
+        <trans-unit id="Report 1684502166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HGS Sales - Reminder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - ReportDataItem 1929467888 - Property 1806354803" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - ReportDataItem Issued Reminder Header - Property RequestFilterHeading</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 316520822 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Internal Information</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowInternalInfo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 316520822 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the printed report to show information that is only for internal use.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowInternalInfo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 816368762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Log Interaction</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control LogInteraction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 816368762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the reminder that you print to be recorded as interaction, and to be added to the Interaction Log Entry table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control LogInteraction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 2278817471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show Not Due Amounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowNotDueAmounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 2278817471 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want to show amounts that are not due from customers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowNotDueAmounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 4146528255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show MIR Detail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowMIR - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - Control 4146528255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want multiple interest rate details for the journal lines to be included in the report.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - Control ShowMIR - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1327832897" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text000Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1196336482" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total %1 Incl. VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text001Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1753513791" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text002Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 17661673" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification in </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text011Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3543369544" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Local Currency</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text012Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 443342567" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Exchange rate: %1/%2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType Text013Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 626218360" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType TextPageLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 443421780" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType PostingDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1118993357" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType ReminderNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 4233096702" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Account No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType BankAccNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2728952663" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bank</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType BankNameCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 13422290" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Giro No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType GiroNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1306668226" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Registration No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATRegNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1928308579" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phone No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType PhoneNoCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2320187798" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reminder</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType ReminderCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 973567044" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Header Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType HeaderDimensionsCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 343855514" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType DocumentDateCaption1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3208712818" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Interest Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType InterestAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2248914289" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Amount Including VAT</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType AmountIncVATCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1396908878" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATAmtSpecCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2760006609" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Clause</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATClausesLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1071970054" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Identifier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATIdentifierLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 4036938315" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Continued</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType ContinuedCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 4137192940" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Continued</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType ContinuedCaption1Lbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 4092352280" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType DueDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3913295325" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Amount</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATAmountCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1303359398" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT Base</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATBaseCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 969467040" size-unit="char" translate="yes" xml:space="preserve">
+          <source>VAT %</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType VATPercentCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1583171122" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType TotalCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 650077689" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType PageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3112881028" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType DocDateCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2862688884" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Home Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType HomePageCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 595034892" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType EMailCaptionLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 514421613" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType GreetingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3197031362" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You are receiving this email to formally notify you that payment owed by you is past due. The payment was due on %1. Enclosed is a copy of invoice with the details of remaining amount.</source>
+          <note from="Developer" annotates="general" priority="2">%1 = A due date</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType AmtDueLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 1908025102" size-unit="char" translate="yes" xml:space="preserve">
+          <source>If you have already made the payment, please disregard this email. Thank you for your business.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType BodyLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 2771379227" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sincerely</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType ClosingLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 1684502166 - NamedType 3569966352" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report TTTHGS Reminder New - NamedType DescriptionLbl</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1142998179 - Control 4222845916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Contribution Margin</source>
           <note from="Developer" annotates="general" priority="2"></note>

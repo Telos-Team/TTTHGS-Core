@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[{"Id":117,"Kind":13,"Name":"Reminder","PackagePath":"/src/src/Report/Rep50010.StandardReminder.al"}]}
+﻿{"Added":[],"Modified":[{"Id":50004,"Kind":11,"Name":"TTTHGS SalesQuoteToJob","PackagePath":"/src/src/Job/Cod50004.SalesQuoteToJob.al"}],"Removed":[{"Id":117,"Kind":13,"Name":"Reminder","PackagePath":"/src/src/Report/Rep50010.StandardReminder.al"}]}
