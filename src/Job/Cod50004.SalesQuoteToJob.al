@@ -166,8 +166,8 @@ codeunit 50004 "TTTHGS SalesQuoteToJob"
         locrecSalesCommentLine: Record "Sales Comment Line";
         locrecCommentLine: Record "Comment Line";
     begin
-        locrecSalesCommentLine.SetRange("Document Type");
-        locrecSalesCommentLine.SetRange("No.");
+        locrecSalesCommentLine.SetRange("Document Type", recSH."Document Type");
+        locrecSalesCommentLine.SetRange("No.", recsh."No.");
         locrecSalesCommentLine.SetRange("Document Line No.", 0);
         if not locrecSalesCommentLine.FindSet() then
             exit;
