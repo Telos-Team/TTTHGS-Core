@@ -45,8 +45,8 @@ pageextension 50010 "TTTHGS TimeSheet" extends "Time Sheet"
                 Width = 3;
             }
         }
-        moveafter("TTTHGS JobTaskNo"; Field6)
-        moveafter("TTTHGS CauseOfAbsenceCode"; Description)
+        //        moveafter("TTTHGS JobTaskNo"; Field6)
+        //        moveafter("TTTHGS CauseOfAbsenceCode"; Description)
         modify(Control1)
         {
             FreezeColumn = Description;
