@@ -8,7 +8,7 @@ report 50008 "TTTHGS NotificationEmail"
     {
         dataitem("Integer"; "Integer")
         {
-            DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+            DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
             column(Line1; Line1)
             {
             }
@@ -164,7 +164,6 @@ report 50008 "TTTHGS NotificationEmail"
 
     local procedure CreateSettingsLink()
     var
-        PermissionManager: Codeunit "Permission Manager";
         RecRef: RecordRef;
         PageID: Integer;
     begin
@@ -174,8 +173,6 @@ report 50008 "TTTHGS NotificationEmail"
         DataTypeManagement.GetRecordRef(NotificationSetup, RecRef);
         PageID := PageManagement.GetPageID(RecRef);
         SettingsURL := PageManagement.GetWebUrl(RecRef, PageID);
-        if not PermissionManager.SoftwareAsAService() then
-            SettingsWinURL := PageManagement.GetRTCUrl(RecRef, PageID);
     end;
 
     local procedure SetDocumentTypeAndNumber(SourceRecRef: RecordRef)
@@ -315,10 +312,7 @@ report 50008 "TTTHGS NotificationEmail"
                 end;
         end;
 
-        if NotificationSetup."Display Target" = NotificationSetup."Display Target"::Windows then
-            DocumentURL := PageManagement.GetRTCUrl(RecRef, "Notification Entry"."Link Target Page")
-        else
-            DocumentURL := PageManagement.GetWebUrl(RecRef, "Notification Entry"."Link Target Page");
+        DocumentURL := PageManagement.GetWebUrl(RecRef, "Notification Entry"."Link Target Page");
     end;
 
     local procedure SetReportLinePlaceholders()

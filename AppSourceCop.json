@@ -1,3 +1,10 @@
 {
-    "mandatoryPrefix": "TTTHGS"
+    "mandatoryPrefix": "TTTHGS",
+    "idRanges": [
+        {
+            "from": 50000,
+            "to": 50099
+          }      
+    ],
+    "supportedCountries": ["DK"]
 }

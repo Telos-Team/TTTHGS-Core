@@ -15,7 +15,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
     {
         dataitem(Header; "Sales Invoice Header")
         {
-            DataItemTableView = SORTING ("No.");
+            DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.", "Sell-to Customer No.", "No. Printed";
             RequestFilterHeading = 'Posted Sales Invoice';
             column(CompanyAddress1; CompanyAddr[1])
@@ -422,9 +422,9 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(Line; "Sales Invoice Line")
             {
-                DataItemLink = "Document No." = FIELD ("No.");
+                DataItemLink = "Document No." = FIELD("No.");
                 DataItemLinkReference = Header;
-                DataItemTableView = SORTING ("Document No.", "Line No.");
+                DataItemTableView = SORTING("Document No.", "Line No.");
                 column(LineNo_Line; "Line No.")
                 {
                 }
@@ -550,7 +550,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
                 }
                 dataitem(ShipmentLine; "Sales Shipment Buffer")
                 {
-                    DataItemTableView = SORTING ("Document No.", "Line No.", "Entry No.");
+                    DataItemTableView = SORTING("Document No.", "Line No.", "Entry No.");
                     UseTemporary = true;
                     column(DocumentNo_ShipmentLine; "Document No.")
                     {
@@ -576,7 +576,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
                 }
                 dataitem(AssemblyLine; "Posted Assembly Line")
                 {
-                    DataItemTableView = SORTING ("Document No.", "Line No.");
+                    DataItemTableView = SORTING("Document No.", "Line No.");
                     UseTemporary = true;
                     column(LineNo_AssemblyLine; "No.")
                     {
@@ -609,7 +609,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
 
                 trigger OnAfterGetRecord()
                 var
-                    PermissionManager: Codeunit "Permission Manager";
+                    EnvironmentInfo: Codeunit "Environment Information";
                 begin
                     InitializeShipmentLine();
                     if Type = Type::"G/L Account" then
@@ -650,11 +650,11 @@ report 50001 "TTTHGS StandardSalesInvoice"
                         Clear(CompanyInfo.Picture);
                     FirstLineHasBeenOutput := true;
 
-                    if ("Job No." <> '') and (not PermissionManager.SoftwareAsAService()) then
+                    if ("Job No." <> '') and (not EnvironmentInfo.IsSaaS()) then
                         JobNo := ''
                     else
                         JobNo := "Job No.";
-                    if ("Job Task No." <> '') and (not PermissionManager.SoftwareAsAService()) then
+                    if ("Job Task No." <> '') and (not EnvironmentInfo.IsSaaS()) then
                         JobTaskNo := ''
                     else
                         JobTaskNo := "Job Task No.";
@@ -697,7 +697,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(WorkDescriptionLines; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 .. 99999));
+                DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 .. 99999));
                 column(WorkDescriptionLineNumber; Number)
                 {
                 }
@@ -707,28 +707,38 @@ report 50001 "TTTHGS StandardSalesInvoice"
 
                 trigger OnAfterGetRecord()
                 begin
-                    if not TempBlobWorkDescription.MoreTextLines() then
+                    if WorkDescriptionInstream.EOS() then
                         CurrReport.Break();
+                    WorkDescriptionInstream.ReadText(WorkDescriptionLine);
 
-                    TempBlobWorkDescription.StartReadingTextLines(TEXTENCODING::UTF8);
-                    WorkDescriptionLine := TempBlobWorkDescription.ReadTextLine();
+                    //                    if not TempBlobWorkDescription.MoreTextLines() then
+                    //                        CurrReport.Break();
+                    //
+                    //                    TempBlobWorkDescription.StartReadingTextLines(TEXTENCODING::UTF8);
+                    //                    WorkDescriptionLine := TempBlobWorkDescription.ReadTextLine();
                 end;
 
                 trigger OnPostDataItem()
                 begin
-                    Clear(TempBlobWorkDescription);
+                    Clear(WorkDescriptionInstream)
+
+                    //                    Clear(TempBlobWorkDescription); 
                 end;
 
                 trigger OnPreDataItem()
                 begin
                     if not ShowWorkDescription then
                         CurrReport.Break();
-                    TempBlobWorkDescription.Blob := Header."Work Description";
+                    Header."Work Description".CreateInStream(WorkDescriptionInstream, TEXTENCODING::UTF8);
+
+                    //                    if not ShowWorkDescription then
+                    //                        CurrReport.Break();
+                    //                    TempBlobWorkDescription.Blob := Header."Work Description";
                 end;
             }
             dataitem(VATAmountLine; "VAT Amount Line")
             {
-                DataItemTableView = SORTING ("VAT Identifier", "VAT Calculation Type", "Tax Group Code", "Use Tax", Positive);
+                DataItemTableView = SORTING("VAT Identifier", "VAT Calculation Type", "Tax Group Code", "Use Tax", Positive);
                 UseTemporary = true;
                 column(InvoiceDiscountAmount_VATAmountLine; "Invoice Discount Amount")
                 {
@@ -877,7 +887,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(ReportTotalsLine; "Report Totals Buffer")
             {
-                DataItemTableView = SORTING ("Line No.");
+                DataItemTableView = SORTING("Line No.");
                 UseTemporary = true;
                 column(Description_ReportTotalsLine; Description)
                 {
@@ -902,7 +912,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(LineFee; "Integer")
             {
-                DataItemTableView = SORTING (Number) ORDER(Ascending) WHERE (Number = FILTER (1 ..));
+                DataItemTableView = SORTING(Number) ORDER(Ascending) WHERE(Number = FILTER(1 ..));
                 column(LineFeeCaptionText; TempLineFeeNoteOnReportHist.ReportText)
                 {
                 }
@@ -922,7 +932,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(PaymentReportingArgument; "Payment Reporting Argument")
             {
-                DataItemTableView = SORTING (Key);
+                DataItemTableView = SORTING(Key);
                 UseTemporary = true;
                 column(PaymentServiceLogo; Logo)
                 {
@@ -942,7 +952,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(LeftHeader; "Name/Value Buffer")
             {
-                DataItemTableView = SORTING (ID);
+                DataItemTableView = SORTING(ID);
                 UseTemporary = true;
                 column(LeftHeaderName; Name)
                 {
@@ -953,7 +963,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(RightHeader; "Name/Value Buffer")
             {
-                DataItemTableView = SORTING (ID);
+                DataItemTableView = SORTING(ID);
                 UseTemporary = true;
                 column(RightHeaderName; Name)
                 {
@@ -964,7 +974,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(LetterText; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                 column(GreetingText; GreetingLbl)
                 {
                 }
@@ -987,7 +997,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             }
             dataitem(Totals; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                 column(TotalNetAmount; TotalAmount)
                 {
                     AutoFormatExpression = Header."Currency Code";
@@ -1060,16 +1070,17 @@ report 50001 "TTTHGS StandardSalesInvoice"
             var
                 CurrencyExchangeRate: Record "Currency Exchange Rate";
                 PaymentServiceSetup: Record "Payment Service Setup";
-                IdentityManagement: Codeunit "Identity Management";
-                //O365SalesInvoiceMgmt: Codeunit "O365 Sales Invoice Mgmt";
+                EnvInfoProx: Codeunit "Env. Info Proxy";
+                LanguageCU: Codeunit Language;
+            //O365SalesInvoiceMgmt: Codeunit "O365 Sales Invoice Mgmt";
             begin
-                if IdentityManagement.IsInvAppId() then begin
-                    "Language Code" := Language.GetUserLanguage();
-                    CurrReport.Language := Language.GetLanguageID("Language Code");
+                if EnvInfoProx.IsInvoicing() then begin
+                    "Language Code" := LanguageCU.GetUserLanguageCode();
+                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
                 end;
 
-                if not IdentityManagement.IsInvAppId() then
-                    CurrReport.Language := Language.GetLanguageID("Language Code");
+                if not EnvInfoProx.IsInvoicing() then
+                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
 
                 FillLeftHeader();
                 FillRightHeader();
@@ -1246,6 +1257,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         FormatDocument: Codeunit "Format Document";
         SegManagement: Codeunit SegManagement;
         cuSalesMgt: Codeunit "TTTHGS SalesManagement";
+        WorkDescriptionInstream: InStream;
         SalespersonLbl: Label 'Salesperson';
         CompanyInfoBankAccNoLbl: Label 'Account No.';
         CompanyInfoBankNameLbl: Label 'Bank';
@@ -1445,6 +1457,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         LineFeeNoteOnReportHist: Record "Line Fee Note on Report Hist.";
         CustLedgerEntry: Record "Cust. Ledger Entry";
         Customer: Record Customer;
+        LanguageCU: Codeunit Language;
     begin
         TempLineFeeNoteOnReportHist.DeleteAll();
         CustLedgerEntry.SetRange("Document Type", CustLedgerEntry."Document Type"::Invoice);
@@ -1464,7 +1477,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
                 TempLineFeeNoteOnReportHist.Insert();
             until LineFeeNoteOnReportHist.Next() = 0
         else begin
-            LineFeeNoteOnReportHist.SetRange("Language Code", Language.GetUserLanguage());
+            LineFeeNoteOnReportHist.SetRange("Language Code", LanguageCU.GetUserLanguageCode());
             if LineFeeNoteOnReportHist.FindSet() then
                 repeat
                     TempLineFeeNoteOnReportHist.Init();

@@ -11,7 +11,7 @@ report 50007 "TTTHGS StandardStatement"
     {
         dataitem(Customer; Customer)
         {
-            DataItemTableView = SORTING ("No.");
+            DataItemTableView = SORTING("No.");
             PrintOnlyIfDetail = true;
             RequestFilterFields = "No.", "Search Name", "Print Statements", "Currency Filter";
             column(No_Cust; "No.")
@@ -22,7 +22,7 @@ report 50007 "TTTHGS StandardStatement"
             }
             dataitem("Integer"; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                 PrintOnlyIfDetail = true;
                 column(CompanyPicture; CompanyInfo.Picture)
                 {
@@ -194,14 +194,14 @@ report 50007 "TTTHGS StandardStatement"
                 }
                 dataitem(CurrencyLoop; "Integer")
                 {
-                    DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                    DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                     PrintOnlyIfDetail = true;
                     column(Total_Caption2; Total_CaptionLbl)
                     {
                     }
                     dataitem(CustLedgEntryHdr; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                        DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                         column(Currency2Code_CustLedgEntryHdr; StrSubstNo(EntriesLbl, CurrencyCode3))
                         {
                         }
@@ -230,7 +230,7 @@ report 50007 "TTTHGS StandardStatement"
                         }
                         dataitem(DtldCustLedgEntries; "Detailed Cust. Ledg. Entry")
                         {
-                            DataItemTableView = SORTING ("Customer No.", "Posting Date", "Entry Type", "Currency Code");
+                            DataItemTableView = SORTING("Customer No.", "Posting Date", "Entry Type", "Currency Code");
                             column(PostDate_DtldCustLedgEntries; Format("Posting Date"))
                             {
                             }
@@ -344,7 +344,7 @@ report 50007 "TTTHGS StandardStatement"
                     }
                     dataitem(CustLedgEntryFooter; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                        DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                         column(CurrencyCode3_CustLedgEntryFooter; CurrencyCode3)
                         {
                         }
@@ -362,7 +362,7 @@ report 50007 "TTTHGS StandardStatement"
                     }
                     dataitem(OverdueVisible; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                        DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                         column(Total_Caption3; Total_CaptionLbl)
                         {
                         }
@@ -386,9 +386,9 @@ report 50007 "TTTHGS StandardStatement"
                         }
                         dataitem(CustLedgEntry2; "Cust. Ledger Entry")
                         {
-                            DataItemLink = "Customer No." = FIELD ("No.");
+                            DataItemLink = "Customer No." = FIELD("No.");
                             DataItemLinkReference = Customer;
-                            DataItemTableView = SORTING ("Customer No.", Open, Positive, "Due Date");
+                            DataItemTableView = SORTING("Customer No.", Open, Positive, "Due Date");
                             column(OverDueEntries; StrSubstNo(OverdueEntriesLbl, TempCurrency2.Code))
                             {
                             }
@@ -460,7 +460,7 @@ report 50007 "TTTHGS StandardStatement"
                         }
                         dataitem(OverdueEntryFooder; "Integer")
                         {
-                            DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                            DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                             column(OverdueBalance; CustBalance2)
                             {
                             }
@@ -506,12 +506,12 @@ report 50007 "TTTHGS StandardStatement"
                 }
                 dataitem(AgingBandVisible; "Integer")
                 {
-                    DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                    DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                     dataitem(AgingCustLedgEntry; "Cust. Ledger Entry")
                     {
-                        DataItemLink = "Customer No." = FIELD ("No.");
+                        DataItemLink = "Customer No." = FIELD("No.");
                         DataItemLinkReference = Customer;
-                        DataItemTableView = SORTING ("Customer No.", Open, Positive, "Due Date");
+                        DataItemTableView = SORTING("Customer No.", Open, Positive, "Due Date");
 
                         trigger OnAfterGetRecord()
                         var
@@ -543,7 +543,7 @@ report 50007 "TTTHGS StandardStatement"
                     }
                     dataitem(AgingBandLoop; "Integer")
                     {
-                        DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                        DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                         column(AgingDate1; Format(AgingDate[1] + 1))
                         {
                         }
@@ -638,7 +638,7 @@ report 50007 "TTTHGS StandardStatement"
             }
             dataitem(LetterText; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                 column(GreetingText; GreetingLbl)
                 {
                 }
@@ -651,9 +651,11 @@ report 50007 "TTTHGS StandardStatement"
             }
 
             trigger OnAfterGetRecord()
+            var
+                LanguageCU: Codeunit Language;
             begin
                 TempAgingBandBuf.DeleteAll();
-                CurrReport.Language := Language.GetLanguageID("Language Code");
+                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
                 PrintLine := false;
                 Cust2 := Customer;
                 CopyFilter("Currency Filter", TempCurrency2.Code);
@@ -934,7 +936,6 @@ report 50007 "TTTHGS StandardStatement"
         Cust2: Record Customer;
         Currency: Record Currency;
         TempCurrency2: Record Currency temporary;
-        Language: Record Language;
         CustLedgerEntry: Record "Cust. Ledger Entry";
         DetailedCustLedgEntry2: Record "Detailed Cust. Ledg. Entry";
         TempAgingBandBuf: Record "Aging Band Buffer" temporary;
@@ -1094,7 +1095,6 @@ report 50007 "TTTHGS StandardStatement"
         TempAgingBandBuf.Modify();
     end;
 
-    [Scope('Personalization')]
     procedure SkipReversedUnapplied(var DetailedCustLedgEntry: Record "Detailed Cust. Ledg. Entry"): Boolean
     var
         CustLedgEntry: Record "Cust. Ledger Entry";
@@ -1112,7 +1112,6 @@ report 50007 "TTTHGS StandardStatement"
         exit(false);
     end;
 
-    [Scope('Personalization')]
     procedure InitializeRequest(NewPrintEntriesDue: Boolean; NewPrintAllHavingEntry: Boolean; NewPrintAllHavingBal: Boolean; NewPrintReversedEntries: Boolean; NewPrintUnappliedEntries: Boolean; NewIncludeAgingBand: Boolean; NewPeriodLength: Text[30]; NewDateChoice: Option "Due Date","Posting Date"; NewLogInteraction: Boolean; NewStartDate: Date; NewEndDate: Date)
     begin
         InitRequestPageDataInternal();
@@ -1137,7 +1136,6 @@ report 50007 "TTTHGS StandardStatement"
         exit(CurrReport.Preview() or MailManagement.IsHandlingGetEmailBody());
     end;
 
-    [Scope('Personalization')]
     procedure InitRequestPageDataInternal()
     begin
         if isInitialized then

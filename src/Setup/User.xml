@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?> 
+<PermissionSets>
+    <PermissionSet RoleID="TTTHGS-User" RoleName="TTTHGS User">
+        <Permission>
+            <!-- Transfer2Excel Template -->
+            <ObjectType>Table</ObjectType>
+            <ObjectID>50001</ObjectID>
+            <ReadPermission>No</ReadPermission>
+            <InsertPermission>No</InsertPermission>
+            <ModifyPermission>No</ModifyPermission>
+            <DeletePermission>No</DeletePermission>
+            <ExecutePermission>Yes</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <!-- Transfer2Excel Template -->
+            <ObjectType>TableData</ObjectType>
+            <ObjectID>50001</ObjectID>
+            <ReadPermission>Yes</ReadPermission>
+            <InsertPermission>Yes</InsertPermission>
+            <ModifyPermission>Yes</ModifyPermission>
+            <DeletePermission>Yes</DeletePermission>
+            <ExecutePermission>No</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+        <Permission>
+            <!-- Transfer2Excel Template -->
+            <ObjectType>Page</ObjectType>
+            <ObjectID>50001</ObjectID>
+            <ReadPermission>No</ReadPermission>
+            <InsertPermission>No</InsertPermission>
+            <ModifyPermission>No</ModifyPermission>
+            <DeletePermission>No</DeletePermission>
+            <ExecutePermission>Yes</ExecutePermission>
+            <SecurityFilter />
+        </Permission>
+    </PermissionSet>
+</PermissionSets>
+<!-- 
+<?xml version="1.0" encoding="utf-8" standalone="no"?> 
 <PermissionSets>
     <PermissionSet RoleID="TTTHGS-User" RoleName="TTTHGS User">
         <Permission>
@@ -36,3 +75,4 @@
         </Permission>
     </PermissionSet>
 </PermissionSets>
+-->

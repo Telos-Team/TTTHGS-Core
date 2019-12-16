@@ -29,7 +29,7 @@ tableextension 50000 "TTTHGS Job" extends Job
             DataClassification = CustomerContent;
             TableRelation = Contact;
         }
-        field(50002; "TTTHGS DeliveryName"; Text[50])
+        field(50002; "TTTHGS DeliveryName"; Text[100])
         {
             Caption = 'Delivery Name';
             DataClassification = CustomerContent;
@@ -39,7 +39,7 @@ tableextension 50000 "TTTHGS Job" extends Job
             Caption = 'Delivery Name 2';
             DataClassification = CustomerContent;
         }
-        field(50004; "TTTHGS DeliveryAddress"; Text[50])
+        field(50004; "TTTHGS DeliveryAddress"; Text[100])
         {
             Caption = 'Delivery Address';
             DataClassification = CustomerContent;
@@ -184,14 +184,13 @@ tableextension 50000 "TTTHGS Job" extends Job
 
     procedure "TTTHGS_SetWorkDescription"(partxtNewWorkDescription: Text)
     var
-        loctmprecBlob: Record TempBlob;
+        OutStream: OutStream;
     begin
         CLEAR("TTTHGS WorkDescription");
         IF partxtNewWorkDescription = '' THEN
             EXIT;
-        loctmprecBlob.Blob := "TTTHGS WorkDescription";
-        loctmprecBlob.WriteAsText(partxtNewWorkDescription, TEXTENCODING::Windows);
-        "TTTHGS WorkDescription" := loctmprecBlob.Blob;
+        "TTTHGS WorkDescription".CreateOutStream(OutStream);
+        OutStream.WriteText(partxtNewWorkDescription);
         MODIFY();
     end;
 
@@ -203,14 +202,17 @@ tableextension 50000 "TTTHGS Job" extends Job
 
     procedure TTTHGS_GetWorkDescriptionWorkDescriptionCalculated(): Text
     var
-        loctmprecBlob: Record TempBlob;
+        TypeHelper: Codeunit "Type Helper";
+
+        Instream: InStream;
         CR: Text[1];
+
     begin
         IF NOT "TTTHGS WorkDescription".HASVALUE() THEN
             EXIT('');
 
         CR[1] := 10;
-        loctmprecBlob.Blob := "TTTHGS WorkDescription";
-        EXIT(loctmprecBlob.ReadAsText(CR, TEXTENCODING::Windows));
+        "TTTHGS WorkDescription".CreateInStream(Instream, TextEncoding::Windows);
+        exit(TypeHelper.ReadAsTextWithSeparator(Instream, cr));
     end;
 }

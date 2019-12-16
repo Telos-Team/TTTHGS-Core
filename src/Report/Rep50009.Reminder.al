@@ -10,7 +10,7 @@ report 50009 "TTTHGS Reminder"
     {
         dataitem("Issued Reminder Header"; "Issued Reminder Header")
         {
-            DataItemTableView = SORTING ("No.");
+            DataItemTableView = SORTING("No.");
             RequestFilterFields = "No.";
             RequestFilterHeading = 'Reminder';
             column(No_IssuedReminderHeader; "No.")
@@ -51,7 +51,7 @@ report 50009 "TTTHGS Reminder"
             }
             dataitem("Integer"; "Integer")
             {
-                DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                 column(CompanyInfo1Picture; CompanyInfo1.Picture)
                 {
                 }
@@ -193,7 +193,7 @@ report 50009 "TTTHGS Reminder"
                 dataitem(DimensionLoop; "Integer")
                 {
                     DataItemLinkReference = "Issued Reminder Header";
-                    DataItemTableView = SORTING (Number) WHERE (Number = FILTER (1 ..));
+                    DataItemTableView = SORTING(Number) WHERE(Number = FILTER(1 ..));
                     column(DimText; DimText)
                     {
                     }
@@ -221,9 +221,10 @@ report 50009 "TTTHGS Reminder"
                                 DimText := StrSubstNo('%1 - %2', DimSetEntry."Dimension Code", DimSetEntry."Dimension Value Code")
                             else
                                 DimText :=
-                                  StrSubstNo(
-                                    '%1; %2 - %3', DimText,
-                                    DimSetEntry."Dimension Code", DimSetEntry."Dimension Value Code");
+                                  copystr(
+                                    StrSubstNo(
+                                        '%1; %2 - %3', DimText,
+                                        DimSetEntry."Dimension Code", DimSetEntry."Dimension Value Code"), 1, maxstrlen(dimtext));
                             if StrLen(DimText) > MaxStrLen(OldDimText) then begin
                                 DimText := OldDimText;
                                 Continue := true;
@@ -240,9 +241,9 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem("Issued Reminder Line"; "Issued Reminder Line")
                 {
-                    DataItemLink = "Reminder No." = FIELD ("No.");
+                    DataItemLink = "Reminder No." = FIELD("No.");
                     DataItemLinkReference = "Issued Reminder Header";
-                    DataItemTableView = SORTING ("Reminder No.", "Line No.");
+                    DataItemTableView = SORTING("Reminder No.", "Line No.");
                     column(RemAmt_IssuedReminderLine; "Remaining Amount")
                     {
                         AutoFormatExpression = GetCurrencyCodeFromHeader();
@@ -404,9 +405,9 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem(IssuedReminderLine2; "Issued Reminder Line")
                 {
-                    DataItemLink = "Reminder No." = FIELD ("No.");
+                    DataItemLink = "Reminder No." = FIELD("No.");
                     DataItemLinkReference = "Issued Reminder Header";
-                    DataItemTableView = SORTING ("Reminder No.", "Line No.");
+                    DataItemTableView = SORTING("Reminder No.", "Line No.");
                     column(Desc1_IssuedReminderLine; Description)
                     {
                     }
@@ -432,7 +433,7 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem(VATCounter; "Integer")
                 {
-                    DataItemTableView = SORTING (Number);
+                    DataItemTableView = SORTING(Number);
                     column(VATAmtLineAmtIncludVAT; VATAmountLine."Amount Including VAT")
                     {
                         AutoFormatExpression = "Issued Reminder Line".GetCurrencyCodeFromHeader();
@@ -486,7 +487,7 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem(VATClauseEntryCounter; "Integer")
                 {
-                    DataItemTableView = SORTING (Number);
+                    DataItemTableView = SORTING(Number);
                     column(VATClauseVATIdentifier; VATAmountLine."VAT Identifier")
                     {
                     }
@@ -530,7 +531,7 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem(VATCounterLCY; "Integer")
                 {
-                    DataItemTableView = SORTING (Number);
+                    DataItemTableView = SORTING(Number);
                     column(VALExchRate; VALExchRate)
                     {
                     }
@@ -595,7 +596,7 @@ report 50009 "TTTHGS Reminder"
                 }
                 dataitem(LetterText; "Integer")
                 {
-                    DataItemTableView = SORTING (Number) WHERE (Number = CONST (1));
+                    DataItemTableView = SORTING(Number) WHERE(Number = CONST(1));
                     column(GreetingText; GreetingLbl)
                     {
                     }
