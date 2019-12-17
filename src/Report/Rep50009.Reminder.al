@@ -630,8 +630,9 @@ report 50009 "TTTHGS Reminder"
                 GLAcc: Record "G/L Account";
                 CustPostingGroup: Record "Customer Posting Group";
                 VATPostingSetup: Record "VAT Posting Setup";
+                LanguageCU: Codeunit Language;
             begin
-                CurrReport.Language := Language.GetLanguageID("Language Code");
+                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
 
                 DimSetEntry.SetRange("Dimension Set ID", "Dimension Set ID");
 
@@ -807,7 +808,6 @@ report 50009 "TTTHGS Reminder"
         VATAmountLine: Record "VAT Amount Line" temporary;
         VATClause: Record "VAT Clause";
         DimSetEntry: Record "Dimension Set Entry";
-        Language: Record Language;
         CurrExchRate: Record "Currency Exchange Rate";
         FormatAddr: Codeunit "Format Address";
         SegManagement: Codeunit SegManagement;

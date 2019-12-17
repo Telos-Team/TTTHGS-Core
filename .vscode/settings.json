@@ -6,5 +6,6 @@
                              "${UICop}"
                          ],
     "al.enableCodeAnalysis":  true,
-    "al.packageCachePath":  "./.alpackages"
+    "al.packageCachePath":  "./.alpackages",
+    "al.ruleSetPath": "./.vscode/hidden.ruleset.json"
 }

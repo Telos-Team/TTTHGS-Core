@@ -1,0 +1,16 @@
+{
+    "name": "Hidden ruleset",
+    "description": "Hide these Warnings",
+    "rules": [
+        {            
+            "id": "AA0215",
+            "action": "None",
+            "justification": "Justification"
+        },
+        {
+            "id": "AA0218",
+            "action": "None",
+            "justification": "Justification"
+        }
+    ]
+}

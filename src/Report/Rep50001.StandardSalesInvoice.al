@@ -48,7 +48,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
             column(CompanyEMail; CompanyInfo."E-Mail")
             {
             }
-            column(CompanyPicture; CompanyInfo.Picture)
+            column(CompanyPicture; DummyCompanyInfo.Picture)
             {
             }
             column(CompanyPhoneNo; CompanyInfo."Phone No.")
@@ -647,7 +647,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
                     TotalPaymentDiscOnVAT += -("Line Amount" - "Inv. Discount Amount" - "Amount Including VAT");
 
                     if FirstLineHasBeenOutput then
-                        Clear(CompanyInfo.Picture);
+                        Clear(DummyCompanyInfo.Picture);
                     FirstLineHasBeenOutput := true;
 
                     if ("Job No." <> '') and (not EnvironmentInfo.IsSaaS()) then
@@ -690,7 +690,6 @@ report 50001 "TTTHGS StandardSalesInvoice"
                     TransHeaderAmount := 0;
                     PrevLineAmount := 0;
                     FirstLineHasBeenOutput := false;
-                    CompanyInfo.Picture := TempBlobCompanyLogo.Blob;
 
                     OnAfterLineOnPreDataItem(Header, Line);
                 end;
@@ -710,19 +709,11 @@ report 50001 "TTTHGS StandardSalesInvoice"
                     if WorkDescriptionInstream.EOS() then
                         CurrReport.Break();
                     WorkDescriptionInstream.ReadText(WorkDescriptionLine);
-
-                    //                    if not TempBlobWorkDescription.MoreTextLines() then
-                    //                        CurrReport.Break();
-                    //
-                    //                    TempBlobWorkDescription.StartReadingTextLines(TEXTENCODING::UTF8);
-                    //                    WorkDescriptionLine := TempBlobWorkDescription.ReadTextLine();
                 end;
 
                 trigger OnPostDataItem()
                 begin
                     Clear(WorkDescriptionInstream)
-
-                    //                    Clear(TempBlobWorkDescription); 
                 end;
 
                 trigger OnPreDataItem()
@@ -730,10 +721,6 @@ report 50001 "TTTHGS StandardSalesInvoice"
                     if not ShowWorkDescription then
                         CurrReport.Break();
                     Header."Work Description".CreateInStream(WorkDescriptionInstream, TEXTENCODING::UTF8);
-
-                    //                    if not ShowWorkDescription then
-                    //                        CurrReport.Break();
-                    //                    TempBlobWorkDescription.Blob := Header."Work Description";
                 end;
             }
             dataitem(VATAmountLine; "VAT Amount Line")
@@ -1207,8 +1194,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         CompanyInfo.Get();
         SalesSetup.Get();
         CompanyInfo.VerifyAndSetPaymentInfo();
-        TempBlobCompanyLogo.Blob := CompanyInfo.Picture;
-        TempBlobCompanyLogo.Insert();
+        DummyCompanyInfo.Picture := CompanyInfo.Picture;
     end;
 
     trigger OnPostReport()
@@ -1239,18 +1225,16 @@ report 50001 "TTTHGS StandardSalesInvoice"
     end;
 
     var
-        TempBlobWorkDescription: Record TempBlob;
-        TempBlobCompanyLogo: Record TempBlob temporary;
         GLSetup: Record "General Ledger Setup";
         ShipmentMethod: Record "Shipment Method";
         PaymentTerms: Record "Payment Terms";
         PaymentMethod: Record "Payment Method";
         SalespersonPurchaser: Record "Salesperson/Purchaser";
         CompanyInfo: Record "Company Information";
+        DummyCompanyInfo: Record "Company Information";
         SalesSetup: Record "Sales & Receivables Setup";
         Cust: Record Customer;
         RespCenter: Record "Responsibility Center";
-        Language: Record Language;
         VATClause: Record "VAT Clause";
         TempLineFeeNoteOnReportHist: Record "Line Fee Note on Report Hist." temporary;
         FormatAddr: Codeunit "Format Address";
@@ -1355,7 +1339,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         ThanksLbl: Label 'Thank You!';
         JobNoLbl2Lbl: Label 'Job No.';
         JobTaskNoLbl2Lbl: Label 'Job Task No.';
-        JobTaskDescription: Text[50];
+        JobTaskDescription: Text[100];
         JobTaskDescLbl: Label 'Job Task Description';
         UnitLbl: Label 'Unit';
         VATClausesText: Text;
@@ -1412,7 +1396,6 @@ report 50001 "TTTHGS StandardSalesInvoice"
         exit(SalesInvoiceLbl);
     end;
 
-    [Scope('Personalization')]
     procedure InitializeRequest(NewLogInteraction: Boolean; DisplayAsmInfo: Boolean)
     begin
         LogInteraction := NewLogInteraction;
@@ -1426,7 +1409,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         exit(CurrReport.Preview() or MailManagement.IsHandlingGetEmailBody());
     end;
 
-    local procedure GetUOMText(UOMCode: Code[10]): Text[10]
+    local procedure GetUOMText(UOMCode: Code[10]): Text[50]
     var
         UnitOfMeasure: Record "Unit of Measure";
     begin
@@ -1555,7 +1538,7 @@ report 50001 "TTTHGS StandardSalesInvoice"
         end;
     end;
 
-    local procedure GetJobTaskDescription(JobNo: Code[20]; JobTaskNo: Code[20]): Text[50]
+    local procedure GetJobTaskDescription(JobNo: Code[20]; JobTaskNo: Code[20]): Text[100]
     var
         JobTask: Record "Job Task";
     begin
