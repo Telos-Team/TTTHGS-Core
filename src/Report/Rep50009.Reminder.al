@@ -632,7 +632,8 @@ report 50009 "TTTHGS Reminder"
                 VATPostingSetup: Record "VAT Posting Setup";
                 LanguageCU: Codeunit Language;
             begin
-                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                //                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                CurrReport.Language := LanguageCU.GetLanguageIdOrDefault("Language Code");
 
                 DimSetEntry.SetRange("Dimension Set ID", "Dimension Set ID");
 

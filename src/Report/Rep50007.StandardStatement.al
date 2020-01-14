@@ -655,7 +655,9 @@ report 50007 "TTTHGS StandardStatement"
                 LanguageCU: Codeunit Language;
             begin
                 TempAgingBandBuf.DeleteAll();
-                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                //                CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                CurrReport.Language := LanguageCU.GetLanguageIdOrDefault("Language Code");
+                ;
                 PrintLine := false;
                 Cust2 := Customer;
                 CopyFilter("Currency Filter", TempCurrency2.Code);
