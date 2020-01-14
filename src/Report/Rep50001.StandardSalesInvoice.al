@@ -1063,11 +1063,13 @@ report 50001 "TTTHGS StandardSalesInvoice"
             begin
                 if EnvInfoProx.IsInvoicing() then begin
                     "Language Code" := LanguageCU.GetUserLanguageCode();
-                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                    //                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                    LanguageCU.GetLanguageIdOrDefault("Language Code");
                 end;
 
                 if not EnvInfoProx.IsInvoicing() then
-                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                    //                    CurrReport.Language := LanguageCU.GetLanguageID("Language Code");
+                    LanguageCU.GetLanguageIdOrDefault("Language Code");
 
                 FillLeftHeader();
                 FillRightHeader();
