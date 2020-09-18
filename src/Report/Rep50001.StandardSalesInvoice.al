@@ -228,13 +228,13 @@ report 50001 "TTTHGS StandardSalesInvoice"
             column(BilltoCustomerNo_Lbl; FieldCaption("Bill-to Customer No."))
             {
             }
-            column(DocumentDate; Format("Document Date", 0, 4))
+            column(DocumentDate; Format("Document Date", 0, '<Day,2>.<Month,2>.<Year4>'))
             {
             }
             column(DocumentDate_Lbl; FieldCaption("Document Date"))
             {
             }
-            column(DueDate; Format("Due Date", 0, 4))
+            column(DueDate; Format("Due Date", 0, '<Day,2>.<Month,2>.<Year4>'))
             {
             }
             column(DueDate_Lbl; FieldCaption("Due Date"))
